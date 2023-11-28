@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var navLinks = document.querySelectorAll('nav a');
     navLinks.forEach(function(link) {
         link.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent default link behavior
-            var sectionId = this.getAttribute('href').substring(1); // Get section ID
+            event.preventDefault();
+            var sectionId = this.getAttribute('href').substring(1);
             hideAllSections();
             showSection(sectionId);
         });
