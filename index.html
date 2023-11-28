@@ -6,19 +6,31 @@
     <title>Jack Cooper - Personal Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<script>
+    document.getElementById('home-link').addEventListener('click', function() {
+        document.getElementById('home').style.display = 'block';
+        document.getElementById('contact').style.display = 'none';
+    });
+
+    document.getElementById('contact-link').addEventListener('click', function() {
+        document.getElementById('home').style.display = 'none';
+        document.getElementById('contact').style.display = 'block';
+    });
+</script>
 <body>
     <header>
         <div class="container">
             <h1>Jack Cooper</h1>
+            <!-- Navigation Menu -->
             <nav>
-                <a href="#">Home</a> |
-                <a href="#">About</a> |
+                <a href="#" id="home-link">Home</a> |
+                <a href="#" id="contact-link">Contact Me</a> |
                 <a href="#">Services</a> |
                 <a href="#">Contact Me</a>
             </nav>
         </div>
     </header>
-
+    <!-- Home -->
     <div class="container">
         <main>
             <h2>Welcome to My Website</h2>
@@ -28,6 +40,9 @@
                I'm excited to embark on this next chapter, applying the skills and insights I've gained to make a tangible impact in the world of tech and beyond.</p>
         </main>
     </div>
+    <!-- Contact Me -->
+     <div id="contact" style="display: none;">
+     </div>
 
     <footer>
         <div class="container">
