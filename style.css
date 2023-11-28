@@ -16,6 +16,8 @@ body {
     overflow: hidden;
     flex: 1;
     padding-bottom: 60px;
+    padding-left: 60px;
+    padding-Right: 60px;
 }
 
 .image-container {
