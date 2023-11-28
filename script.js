@@ -1,5 +1,3 @@
-console.log("Hello from external script!");
-
 // Function to hide all sections
 function hideAllSections() {
     var sections = document.querySelectorAll('.section');
