@@ -18,6 +18,19 @@ body {
     padding-bottom: 60px;
 }
 
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
 header {
     background: #333;
     color: #fff;
