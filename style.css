@@ -23,12 +23,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 .image-container img {
     max-width: 100%;
+    width: 25%;
     height: auto;
     display: block;
     margin-left: auto;
