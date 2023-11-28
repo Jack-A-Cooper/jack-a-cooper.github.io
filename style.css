@@ -50,13 +50,6 @@ header h1 {
     flex: 1;
 }
 
-header a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-}
-
 nav {
     float: right;
     padding: 10px 0;
