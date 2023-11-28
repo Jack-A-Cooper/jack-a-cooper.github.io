@@ -10,6 +10,10 @@ body {
     line-height: 1.6;
 }
 
+.main-content {
+    margin-top: 100px;
+}
+
 .container {
     width: 80%;
     margin: auto;
@@ -37,6 +41,10 @@ body {
 }
 
 header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
     background: #333;
     color: #fff;
     padding: 10px 20px; /* Adjust padding for smaller screens */
@@ -72,6 +80,7 @@ nav a {
 }
 
 footer {
+    position: fixed;
     padding: 20px;
     margin-top: 20px;
     color: #ffffff;
