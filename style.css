@@ -41,9 +41,9 @@ header {
     color: #fff;
     padding: 10px 20px; /* Adjust padding for smaller screens */
     padding-top: 20px;
+    padding-bottom: 100px;
     min-height: 70px;
     border-bottom: #bbb 1px solid;
-    padding-bottom: 100px;
 }
 
 header h1 {
