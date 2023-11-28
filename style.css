@@ -27,7 +27,8 @@ body {
 
 .image-container img {
     max-width: 25%;
-    height: auto;
+    height: 50px;
+    width: 50px;
     margin: auto;
 }
 
