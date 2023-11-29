@@ -27,12 +27,14 @@ body.dark-mode {
     background-color: #E7E8FF;
 }
 
+/* Source: https://codepen.io/P1N2O/pen/pyBNzX */
 .body-about {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient-background 15s ease infinite;
 	height: 100vh;
 }
+/* Source: https://codepen.io/P1N2O/pen/pyBNzX */
 
 .body-demos {
     background-color: #E7E8FF;
@@ -54,6 +56,7 @@ body.dark-mode {
     background-color: #E7E8FF;
 }
 
+/* Source: https://codepen.io/P1N2O/pen/pyBNzX */
 @keyframes gradient-background {
 	0% {
 		background-position: 0% 50%;
@@ -65,6 +68,7 @@ body.dark-mode {
 		background-position: 0% 50%;
 	}
 }
+/* Source: https://codepen.io/P1N2O/pen/pyBNzX */
 
 header {
     position: fixed;
