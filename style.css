@@ -33,7 +33,6 @@ body.dark-mode {
   background-size: 400% 400%;
   animation: gradient-background-1 30s ease infinite;
   height: 100vh;
-  opacity: 50%;
 }
 
 /* Source: https://codepen.io/P1N2O/pen/pyBNzX */
