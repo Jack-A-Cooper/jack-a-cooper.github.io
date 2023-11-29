@@ -29,13 +29,14 @@ header {
 header h1 {
     margin: 0;
     flex: 1;
+    margin-left:25px;
 }
 
 nav {
     float: right;
     padding: 10px 10px
     gap: 10px;
-    margin-right: 10px;
+    margin-right: 25px;
 }
 
 .nav-toggle {
