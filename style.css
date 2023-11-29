@@ -108,14 +108,14 @@ nav a:hover {
     width: 75%;
     max-width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 50px;
 }
 
 .centered-container {
     width: 75%;
     max-width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 50px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
