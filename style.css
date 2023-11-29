@@ -76,7 +76,7 @@ nav {
     color: white;
 }
 
-nav.a {
+nav a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -85,7 +85,7 @@ nav.a {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-nav.a:hover {
+nav a:hover {
   color: #16415C;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
