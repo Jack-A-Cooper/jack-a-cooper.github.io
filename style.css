@@ -92,7 +92,10 @@ nav a:hover {
 
 .nav-toggle {
     display: none;
+    width: 70%;
     cursor: pointer;
+    max-width: 100%;
+    background-color: black;
 }
 
 .section {
@@ -101,14 +104,15 @@ nav a:hover {
 }
 
 .container {
-    width: 50%;
+    width: 70%;
     max-width: 100%;
     margin: 0 auto;
     padding: 25px;
 }
 
 .centered-container {
-    width: 50%;
+    width: 70%;
+    max-width: 100%;
     margin: 0 0;
     position: absolute;
     top: 50%;
