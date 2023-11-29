@@ -149,6 +149,11 @@ nav a:hover {
     top: 55px;
 }
 
+.active-link {
+    color: #16415C;
+    font-weight: bold;
+}
+
 .section {
     margin-top: 125px;
     padding-bottom: 250px;
