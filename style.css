@@ -133,9 +133,14 @@ container.centered-container {
     padding: 0 5px;
 }
 
-.divider-style line {
-    stroke: #666; /* Change to your desired color */
-    stroke-width: 1; /* Adjust the thickness of the line */
+.divider-style-main line {
+    stroke:#333;
+    stroke-width:2;
+}
+
+.divider-style-alt line {
+    stroke: #666;
+    stroke-width: 1;
 }
 
 footer {
