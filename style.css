@@ -92,7 +92,8 @@ nav a:hover {
 
 .nav-toggle {
     display: none;
-    width: 70%;
+    width: 100%;
+    max-width: 100%;
     cursor: pointer;
     max-width: 100%;
     background-color: black;
