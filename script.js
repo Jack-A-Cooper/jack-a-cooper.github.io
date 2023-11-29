@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Animated Typing/Text
-const typedText = document.getElementById('typed-text');
+const typedText = document.getElementById('typing-animation');
 const phrases = ["Phrase 1", "Phrase 2", "Phrase 3"];
 let phraseIndex = 0;
 let letterIndex = 0;
