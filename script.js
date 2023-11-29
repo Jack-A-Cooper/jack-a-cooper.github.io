@@ -39,25 +39,37 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// light-dark modes
-const modeToggle = document.getElementById('mode-toggle');
-const currentMode = localStorage.getItem('theme');
-if (currentMode === 'dark') {
-    document.body.classList.add('dark-mode');
-    modeToggle.textContent = 'Switch to Light Mode';
-}
-modeToggle.addEventListener('click', function() {
-    document.body.classList.toggle('dark-mode');
+// Dark-Light Modes Toggle
+function toggleDarkMode() {
+    const body = document.body;
+    const isDarkMode = body.classList.toggle('dark-mode');
+    const toggleButton = document.getElementById('mode-toggle');
 
-    let theme = 'light';
-    if (document.body.classList.contains('dark-mode')) {
-        this.textContent = 'Switch to Light Mode';
-        theme = 'dark';
-    } else {
-        this.textContent = 'Switch to Dark Mode';
+    if (toggleButton) {
+        toggleButton.textContent = isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode';
     }
-    localStorage.setItem('theme', theme);
-});
+
+    // Save the current mode to localStorage
+    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+}
+
+// Set the initial mode based on localStorage
+function setInitialMode() {
+    const currentMode = localStorage.getItem('theme');
+    if (currentMode === 'dark') {
+        document.body.classList.add('dark-mode');
+        const toggleButton = document.getElementById('mode-toggle');
+        if (toggleButton) {
+            toggleButton.textContent = 'Switch to Light Mode';
+        }
+    }
+}
+
+// Event listener for the toggle button
+document.getElementById('mode-toggle').addEventListener('click', toggleDarkMode);
+
+// Set the initial mode on page load
+setInitialMode();
 
 // Lazy Loading for performance
 document.addEventListener('DOMContentLoaded', function() {
