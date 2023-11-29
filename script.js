@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
             hideAllSections();
             showSection(link.getAttribute('href').substring(1));
             const sectionName = link.getAttribute('href').substring(1);
-            changeNavbarBackground(sectionName);
+            changeBackground(sectionName);
         });
     });
 
