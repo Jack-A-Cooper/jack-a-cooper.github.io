@@ -38,21 +38,22 @@ document.getElementById('navToggle').addEventListener('click', function() {
 
 // Courtesy of W3Schools: https://www.w3schools.com/howto/howto_js_animate_icons.asp
 function chargebattery() {
-  var a;
-  a = document.getElementById("animated-battery-charging");
-  a.innerHTML = "&#xf244;";
-  setTimeout(function () {
-    a.innerHTML = "&#xf243;";
-  }, 1000);
-  setTimeout(function () {
-    a.innerHTML = "&#xf242;";
-  }, 2000);
-  setTimeout(function () {
-    a.innerHTML = "&#xf241;";
-  }, 3000);
-  setTimeout(function () {
-    a.innerHTML = "&#xf240;";
-  }, 4000);
-}
+        var a;
+        a = document.getElementById("animated-battery-charging");
+        a.innerHTML = "&#xf244;";
+        setTimeout(function () {
+        a.innerHTML = "&#xf243;";
+        }, 1000);
+        setTimeout(function () {
+        a.innerHTML = "&#xf242;";
+        }, 2000);
+        setTimeout(function () {
+        a.innerHTML = "&#xf241;";
+        }, 3000);
+        setTimeout(function () {
+        a.innerHTML = "&#xf240;";
+        }, 4000);
+    }
+
 chargebattery();
 setInterval(chargebattery, 5000);
