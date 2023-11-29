@@ -27,24 +27,26 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-document.getElementById('navToggle').addEventListener('click', function() {
-    var navbar = document.getElementById('navbar');
-    if (navbar.classList.contains('active')) {
-        navbar.classList.remove('active');
-    } else {
-        navbar.classList.add('active');
-    }
+// Nav Toggle Function
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('navToggle').addEventListener('click', function() {
+        var navbar = document.getElementById('navbar');
+        if (navbar.classList.contains('active')) {
+            navbar.classList.remove('active');
+        } else {
+            navbar.classList.add('active');
+        }
+    });
 });
+
 
 // light-dark modes
 const modeToggle = document.getElementById('mode-toggle');
 const currentMode = localStorage.getItem('theme');
-
 if (currentMode === 'dark') {
     document.body.classList.add('dark-mode');
     modeToggle.textContent = 'Switch to Light Mode';
 }
-
 modeToggle.addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
 
@@ -81,7 +83,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Hover Effects
-document.querySelectorAll('.hover-effect').forEach(item => {
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.hover-effect').forEach(item => {
     item.addEventListener('mouseover', () => {
         // Change styles or content
     });
@@ -91,12 +94,11 @@ document.querySelectorAll('.hover-effect').forEach(item => {
 });
 
 // Animated Typing/Text
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', function() {
     const typedText = document.getElementById('typed-text');
     const phrases = ["Yo!", "Hey!", "What's up!?"];
     let phraseIndex = 0;
     let letterIndex = 0;
-    
     function typeLetters() {
         if (letterIndex < phrases[phraseIndex].length) {
             typedText.textContent += phrases[phraseIndex].charAt(letterIndex);
