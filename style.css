@@ -10,34 +10,6 @@ body {
     line-height: 1.6;
 }
 
-.main-content {
-    padding-top: 200px;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    flex: 1;
-    padding-bottom: 60px;
-}
-
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.image-container img {
-    max-width: 100%;
-    width: 10%;
-    height: 10%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 header {
     position: fixed;
     top: 0;
@@ -76,6 +48,45 @@ nav a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
+}
+
+
+.main-content {
+    padding-top: 200px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    flex: 1;
+    padding-bottom: 60px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.image-container img {
+    max-width: 100%;
+    width: 10%;
+    height: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hr-dotted {
+    border-top: 1px dotted #333;
+    margin: 20px 0;
+}
+
+.hr-dashed {
+    border-top: 1px dashed #333;
+    margin: 20px 0;
 }
 
 footer {
