@@ -153,6 +153,20 @@ nav a:hover {
     height: auto;
 }
 
+.photo-column {
+  width: 200px;
+  margin: auto;
+}
+
+.photo-column img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+  border: 4px solid #16415C;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .svg-divider {
     margin: 10px 0;
 }
