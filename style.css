@@ -101,6 +101,8 @@ container.centered-container {
     padding: 20px;
     float: center;
     align-contents: center;
+    margin-left: 40%;
+    margin-right: 40%;
 }
 
 .image-container {
