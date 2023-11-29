@@ -71,8 +71,8 @@ nav a {
 }
 
 .image-container img {
-    max-width: 100%;
-    width: 10%;
+    max-width: 50%;
+    width: 5%;
     height: 10%;
     display: block;
     margin-left: auto;
