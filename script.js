@@ -49,7 +49,7 @@ function hideOnClick(elementId) {
 }
 
 // On click/select elements
-hideOnClick("myElement");
+hideOnClick("navbar");
 
 // Animated Typing/Text Function
 function typeLetters(typedText, phrases) {
