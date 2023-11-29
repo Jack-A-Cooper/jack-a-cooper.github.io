@@ -203,7 +203,6 @@ nav a:hover {
 .fun {
     background: linear-gradient(to black, teal, red, purple, green, yellow, orange, blue);
     -webkit-background-clip: text;
-    color: transparent;
     background-clip: text;
     display: inline; 
     font-size: 16px;
