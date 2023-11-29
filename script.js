@@ -38,6 +38,19 @@ function setInitialMode() {
     }
 }
 
+// Hide on click/select
+function hideOnClick(elementId) {
+  var element = document.getElementById(elementId);
+  if (element) {
+    element.addEventListener("click", function() {
+      this.style.display = "none";
+    });
+  }
+}
+
+// On click/select elements
+hideOnClick("myElement");
+
 // Animated Typing/Text Function
 function typeLetters(typedText, phrases) {
     let phraseIndex = 0;
