@@ -92,7 +92,7 @@ document.querySelectorAll('.hover-effect').forEach(item => {
 
 // Animated Typing/Text
 const typedText = document.getElementById('typed-text');
-const phrases = ["Phrase 1", "Phrase 2", "Phrase 3"];
+const phrases = ["Yo!", "Hey!", "What's up!?"];
 let phraseIndex = 0;
 let letterIndex = 0;
 
