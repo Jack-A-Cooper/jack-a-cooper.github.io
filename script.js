@@ -143,7 +143,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         changeBackground(currentHash);
     }
-});
 
     // Nav Toggle
     var navToggle = document.getElementById('navToggle');
