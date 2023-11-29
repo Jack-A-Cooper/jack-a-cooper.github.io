@@ -32,6 +32,13 @@ header h1 {
     margin-left:25px;
 }
 
+header h2 {
+    margin: 0;
+    flex: 1;
+    margin-left:25px;
+    text-align: center;
+}
+
 nav {
     float: right;
     padding: 10px 10px
