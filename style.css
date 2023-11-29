@@ -200,6 +200,14 @@ nav a:hover {
     font-size: 26px;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.right-align {
+  text-align: right;
+}
+
 footer {
     position: fixed;
     left: 0;
