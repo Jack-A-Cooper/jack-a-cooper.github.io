@@ -1,21 +1,5 @@
-// Function to hide all sections
-function hideAllSections() {
-    var sections = document.querySelectorAll('.section');
-    sections.forEach(function(section) {
-        section.style.display = 'none';
-    });
-}
-
-// Function to show a specific section
-function showSection(sectionId) {
-    var section = document.getElementById(sectionId);
-    if (section) {
-        section.style.display = 'block';
-    }
-}
-
-// Add click event listeners to navigation links
 document.addEventListener('DOMContentLoaded', function() {
+    // Hide and Show Sections
     var navLinks = document.querySelectorAll('nav a');
     navLinks.forEach(function(link) {
         link.addEventListener('click', function(event) {
@@ -25,56 +9,20 @@ document.addEventListener('DOMContentLoaded', function() {
             showSection(sectionId);
         });
     });
-});
 
-// Nav Toggle Function
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('navToggle').addEventListener('click', function() {
-        var navbar = document.getElementById('navbar');
-        if (navbar.classList.contains('active')) {
-            navbar.classList.remove('active');
-        } else {
-            navbar.classList.add('active');
-        }
-    });
-});
-
-// Dark-Light Modes Toggle
-function toggleDarkMode() {
-    const body = document.body;
-    const isDarkMode = body.classList.toggle('dark-mode');
-    const toggleButton = document.getElementById('mode-toggle');
-
-    if (toggleButton) {
-        toggleButton.textContent = isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode';
+    // Nav Toggle Function
+    var navToggle = document.getElementById('navToggle');
+    if (navToggle) {
+        navToggle.addEventListener('click', function() {
+            var navbar = document.getElementById('navbar');
+            if (navbar) {
+                navbar.classList.toggle('active');
+            }
+        });
     }
 
-    // Save the current mode to localStorage
-    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-}
-
-// Set the initial mode based on localStorage
-function setInitialMode() {
-    const currentMode = localStorage.getItem('theme');
-    if (currentMode === 'dark') {
-        document.body.classList.add('dark-mode');
-        const toggleButton = document.getElementById('mode-toggle');
-        if (toggleButton) {
-            toggleButton.textContent = 'Switch to Light Mode';
-        }
-    }
-}
-
-// Event listener for the toggle button
-document.getElementById('mode-toggle').addEventListener('click', toggleDarkMode);
-
-// Set the initial mode on page load
-setInitialMode();
-
-// Lazy Loading for performance
-document.addEventListener('DOMContentLoaded', function() {
+    // Lazy Loading for Images
     const lazyImages = [].slice.call(document.querySelectorAll('img.lazy'));
-
     if ("IntersectionObserver" in window) {
         let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
             entries.forEach(function(entry) {
@@ -86,22 +34,23 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         });
-
         lazyImages.forEach(function(lazyImage) {
             lazyImageObserver.observe(lazyImage);
         });
     }
-});
 
-// Hover Effects
-document.addEventListener('DOMContentLoaded', function() {
+    // Hover Effects
     document.querySelectorAll('.hover-effect').forEach(item => {
-    item.addEventListener('mouseover', () => {
-        // Change styles or content
+        item.addEventListener('mouseover', () => {
+            // Change styles or content
+        });
+        item.addEventListener('mouseout', () => {
+            // Revert styles or content
+        });
     });
-    item.addEventListener('mouseout', () => {
-        // Revert styles or content
-    });
+
+    // Set the initial mode based on localStorage
+    setInitialMode();
 });
 
 // Animated Typing/Text
@@ -135,7 +84,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-/*
+
 // Animated Functions
 // Courtesy of W3Schools: https://www.w3schools.com/howto/howto_js_animate_icons.asp
 function chargebattery() {
@@ -175,4 +124,4 @@ setInterval(chargebattery, 5000);
 
 hourglass();
 setInterval(hourglass, 3000);
-*/
+
