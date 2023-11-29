@@ -268,7 +268,7 @@ header {
     top: -40px;
 }
 
-navbar active {
+nav {
     background: #333;
     position: fixed;
     left: 0;
