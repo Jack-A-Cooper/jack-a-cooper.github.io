@@ -96,6 +96,8 @@ nav a:hover {
     cursor: pointer;
     max-width: 100%;
     background-color: black;
+    padding: 25px 25px;
+    size: 50px;
 }
 
 .section {
