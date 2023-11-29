@@ -24,7 +24,14 @@ body.dark-mode {
 }
 
 .body-home {
-    background-color: #E7E8FF;
+  background-color: #222;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  overflow: hidden;
+  --size: 500px;
 }
 
 .body-demos {
