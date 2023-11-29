@@ -91,23 +91,25 @@ document.querySelectorAll('.hover-effect').forEach(item => {
 });
 
 // Animated Typing/Text
-const typedText = document.getElementById('typed-text');
-const phrases = ["Yo!", "Hey!", "What's up!?"];
-let phraseIndex = 0;
-let letterIndex = 0;
-
-function typeLetters() {
-    if (letterIndex < phrases[phraseIndex].length) {
-        typedText.textContent += phrases[phraseIndex].charAt(letterIndex);
-        letterIndex++;
-        setTimeout(typeLetters, 200);
-    } else {
-        setTimeout(() => {
-            typedText.textContent = "";
-            letterIndex = 0;
-            phraseIndex = (phraseIndex + 1) % phrases.length;
-            typeLetters();
-        }, 2000);
+document.addEventListener('DOMContentLoaded', (event) => {
+    const typedText = document.getElementById('typed-text');
+    const phrases = ["Yo!", "Hey!", "What's up!?"];
+    let phraseIndex = 0;
+    let letterIndex = 0;
+    
+    function typeLetters() {
+        if (letterIndex < phrases[phraseIndex].length) {
+            typedText.textContent += phrases[phraseIndex].charAt(letterIndex);
+            letterIndex++;
+            setTimeout(typeLetters, 200);
+        } else {
+            setTimeout(() => {
+                typedText.textContent = "";
+                letterIndex = 0;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                typeLetters();
+            }, 2000);
+        }
     }
 }
 
