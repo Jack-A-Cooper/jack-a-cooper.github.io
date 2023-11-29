@@ -80,12 +80,13 @@ nav a {
 
 footer {
     position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
     padding: 20px;
-    margin-top: 20px;
     color: #ffffff;
     background-color: #333333;
     text-align: center;
-    margin-top: auto;
 }
 
 /* Responsive styles for mobile devices */
