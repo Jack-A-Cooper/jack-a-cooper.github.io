@@ -156,6 +156,14 @@ container.centered-container {
     stroke-width: 1;
 }
 
+.button {
+    float: center;
+    padding: 10px 10px
+    gap: 10px;
+    margin-right: 25px;
+    text-align: center;
+}
+
 .typed-text-animation {
     background: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
     -webkit-background-clip: text;
