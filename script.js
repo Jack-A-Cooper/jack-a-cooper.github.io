@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
 // light-dark modes
 const modeToggle = document.getElementById('mode-toggle');
 const currentMode = localStorage.getItem('theme');
