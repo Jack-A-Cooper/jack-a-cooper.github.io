@@ -145,10 +145,9 @@ container.centered-container {
     stroke-width: 1;
 }
 
-p.center-text {
-    text-align: center;
-    margin: 20px 0;
-    padding: 10px;
+.typed-text-animation {
+    color: #666;
+    font-size: 36px;
 }
 
 footer {
