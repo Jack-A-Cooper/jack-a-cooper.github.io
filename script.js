@@ -36,6 +36,7 @@ document.getElementById('navToggle').addEventListener('click', function() {
     }
 });
 
+// Courtesy of W3Schools: https://www.w3schools.com/howto/howto_js_animate_icons.asp
 function chargebattery() {
   var a;
   a = document.getElementById("animated-battery-charging");
