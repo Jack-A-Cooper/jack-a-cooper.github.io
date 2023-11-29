@@ -248,6 +248,13 @@ header {
     padding-bottom: 30px;
 }
 
+.container {
+    width: 85%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
 footer {
     position: fixed;
     left: 0;
@@ -257,6 +264,5 @@ footer {
     color: #ffffff;
     background-color: #333333;
     text-align: center;
-}
 }
 
