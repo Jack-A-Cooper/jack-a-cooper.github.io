@@ -38,6 +38,19 @@ function setInitialMode() {
     }
 }
 
+// Hide on loss of focus
+function hideOnDeselect(elementId) {
+  var element = document.getElementById(elementId);
+  if (element) {
+    element.addEventListener("blur", function() {
+      this.style.display = "none";
+    });
+  }
+}
+
+// On loss of focus hide elements
+hideOnDeselect("navbar");
+
 // Hide on click/select
 function hideOnClick(elementId) {
   var element = document.getElementById(elementId);
@@ -48,7 +61,7 @@ function hideOnClick(elementId) {
   }
 }
 
-// On click/select elements
+// On click/select hide elements
 hideOnClick("navbar");
 
 // Animated Typing/Text Function
