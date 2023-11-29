@@ -91,6 +91,8 @@ container.centered-container {
     max-width: 100%;
     margin: 0 auto;
     padding: 20px;
+    align-contents: center;
+    justify-contents: center;
 }
 
 .image-container {
