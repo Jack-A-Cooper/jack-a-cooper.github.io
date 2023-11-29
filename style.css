@@ -132,13 +132,12 @@ container.centered-container {
 }
 
 .svg-divider {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
-.svg-divider-sub {
-    color: #666;
-    margin: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.divider-style line {
+    stroke: #666; /* Change to your desired color */
+    stroke-width: 4; /* Adjust the thickness of the line */
 }
 
 footer {
