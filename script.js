@@ -135,7 +135,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-
+/*
 // Animated Functions
 // Courtesy of W3Schools: https://www.w3schools.com/howto/howto_js_animate_icons.asp
 function chargebattery() {
@@ -175,3 +175,4 @@ setInterval(chargebattery, 5000);
 
 hourglass();
 setInterval(hourglass, 3000);
+*/
