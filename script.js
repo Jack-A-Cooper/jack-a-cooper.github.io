@@ -1,19 +1,102 @@
+// Function to hide all sections
+function hideAllSections() {
+    var sections = document.querySelectorAll('.section');
+    sections.forEach(function(section) {
+        section.style.display = 'none';
+    });
+}
+
+// Function to show a specific section
+function showSection(sectionId) {
+    var section = document.getElementById(sectionId);
+    if (section) {
+        section.style.display = 'block';
+    }
+}
+
+// Toggle Dark-Light Modes
+function toggleDarkMode() {
+    const body = document.body;
+    const isDarkMode = body.classList.toggle('dark-mode');
+    const toggleButton = document.getElementById('mode-toggle');
+
+    if (toggleButton) {
+        toggleButton.textContent = isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode';
+        localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+    }
+}
+
+// Set the initial mode based on localStorage
+function setInitialMode() {
+    const currentMode = localStorage.getItem('theme');
+    if (currentMode === 'dark') {
+        document.body.classList.add('dark-mode');
+        const toggleButton = document.getElementById('mode-toggle');
+        if (toggleButton) {
+            toggleButton.textContent = 'Switch to Light Mode';
+        }
+    }
+}
+
+// Animated Typing/Text Function
+function typeLetters(typedText, phrases) {
+    let phraseIndex = 0;
+    let letterIndex = 0;
+
+    function type() {
+        if (letterIndex < phrases[phraseIndex].length) {
+            typedText.textContent += phrases[phraseIndex].charAt(letterIndex);
+            letterIndex++;
+            setTimeout(type, 200); // Typing speed
+        } else {
+            setTimeout(() => {
+                typedText.textContent = "";
+                letterIndex = 0;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                type();
+            }, 2000); // Pause between phrases
+        }
+    }
+
+    type();
+}
+
+// Animated Battery and Hourglass
+function chargebattery() {
+    var a = document.getElementById("battery-animation");
+    if (a) {
+        a.innerHTML = "&#xf244;";
+        setTimeout(() => { a.innerHTML = "&#xf243;"; }, 1000);
+        setTimeout(() => { a.innerHTML = "&#xf242;"; }, 2000);
+        setTimeout(() => { a.innerHTML = "&#xf241;"; }, 3000);
+        setTimeout(() => { a.innerHTML = "&#xf240;"; }, 4000);
+    }
+}
+
+function hourglass() {
+    var a = document.getElementById("hourglass-animation");
+    if (a) {
+        a.innerHTML = "&#xf251;";
+        setTimeout(() => { a.innerHTML = "&#xf252;"; }, 1000);
+        setTimeout(() => { a.innerHTML = "&#xf253;"; }, 2000);
+    }
+}
+
+// Combined DOMContentLoaded event listener
 document.addEventListener('DOMContentLoaded', function() {
-    // Hide and Show Sections
-    var navLinks = document.querySelectorAll('nav a');
-    navLinks.forEach(function(link) {
-        link.addEventListener('click', function(event) {
+    // Navigation and Section Display
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', event => {
             event.preventDefault();
-            var sectionId = this.getAttribute('href').substring(1);
             hideAllSections();
-            showSection(sectionId);
+            showSection(link.getAttribute('href').substring(1));
         });
     });
 
-    // Nav Toggle Function
+    // Nav Toggle
     var navToggle = document.getElementById('navToggle');
     if (navToggle) {
-        navToggle.addEventListener('click', function() {
+        navToggle.addEventListener('click', () => {
             var navbar = document.getElementById('navbar');
             if (navbar) {
                 navbar.classList.toggle('active');
@@ -21,25 +104,26 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Lazy Loading for Images
-    const lazyImages = [].slice.call(document.querySelectorAll('img.lazy'));
+    // Lazy Loading Images
     if ("IntersectionObserver" in window) {
-        let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-            entries.forEach(function(entry) {
+        const lazyImages = document.querySelectorAll('img.lazy');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    let lazyImage = entry.target;
-                    lazyImage.src = lazyImage.dataset.src;
-                    lazyImage.classList.remove('lazy');
-                    lazyImageObserver.unobserve(lazyImage);
+                    let img = entry.target;
+                    img.src = img.dataset.src;
+                    img.classList.remove('lazy');
+                    observer.unobserve(img);
                 }
             });
         });
-        lazyImages.forEach(function(lazyImage) {
-            lazyImageObserver.observe(lazyImage);
-        });
+        lazyImages.forEach(img => observer.observe(img));
     }
 
-    // Hover Effects
+    // Set initial mode
+    setInitialMode();
+
+    // Hover Effects (Placeholder)
     document.querySelectorAll('.hover-effect').forEach(item => {
         item.addEventListener('mouseover', () => {
             // Change styles or content
@@ -49,79 +133,26 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Set the initial mode based on localStorage
-    setInitialMode();
-});
-
-// Animated Typing/Text
-const typedText = document.getElementById('typing-animation');
-const phrases = ["Yo!", "Hey!", "What's Up!"];
-let phraseIndex = 0;
-let letterIndex = 0;
-
-function typeLetters() {
-    if (letterIndex < phrases[phraseIndex].length) {
-        typedText.textContent += phrases[phraseIndex].charAt(letterIndex);
-        letterIndex++;
-        setTimeout(typeLetters, 200); // Typing speed
-    } else {
-        setTimeout(() => {
-            typedText.textContent = "";
-            letterIndex = 0;
-            phraseIndex = (phraseIndex + 1) % phrases.length;
-            typeLetters();
-        }, 2000); // Pause between phrases
-    }
-}
-
-// Smooth Scrolling
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+    // Smooth Scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', event => {
+            event.preventDefault();
+            document.querySelector(anchor.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
         });
     });
+
+    // Initiate typing animation
+    const typedTextElement = document.getElementById('typing-animation');
+    if (typedTextElement) {
+        typeLetters(typedTextElement, ["Yo!", "Hey!", "What's Up!"]);
+    }
+
+    // Initiate battery and hourglass animations
+    chargebattery();
+    setInterval(chargebattery, 5000);
+
+    hourglass();
+    setInterval(hourglass, 3000);
 });
-
-// Animated Functions
-// Courtesy of W3Schools: https://www.w3schools.com/howto/howto_js_animate_icons.asp
-function chargebattery() {
-    var a;
-    a = document.getElementById("battery-animation");
-    a.innerHTML = "&#xf244;";
-    setTimeout(function () {
-        a.innerHTML = "&#xf243;";
-    }, 1000);
-    setTimeout(function () {
-        a.innerHTML = "&#xf242;";
-    }, 2000);
-    setTimeout(function () {
-        a.innerHTML = "&#xf241;";
-    }, 3000);
-    setTimeout(function () {
-        a.innerHTML = "&#xf240;";
-    }, 4000);
-}
-
-function hourglass() {
-  var a;
-  a = document.getElementById("hourglass-animation");
-  a.innerHTML = "&#xf251;";
-  setTimeout(function () {
-      a.innerHTML = "&#xf252;";
-    }, 1000);
-  setTimeout(function () {
-      a.innerHTML = "&#xf253;";
-    }, 2000);
-}
-
-typeLetters();
-
-chargebattery();
-setInterval(chargebattery, 5000);
-
-hourglass();
-setInterval(hourglass, 3000);
-
