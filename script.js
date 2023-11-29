@@ -36,24 +36,40 @@ document.getElementById('navToggle').addEventListener('click', function() {
     }
 });
 
+// Animated Functions
 // Courtesy of W3Schools: https://www.w3schools.com/howto/howto_js_animate_icons.asp
 function chargebattery() {
     var a;
     a = document.getElementById("animated-battery-charging");
     a.innerHTML = "&#xf244;";
     setTimeout(function () {
-    a.innerHTML = "&#xf243;";
+        a.innerHTML = "&#xf243;";
     }, 1000);
     setTimeout(function () {
-    a.innerHTML = "&#xf242;";
+        a.innerHTML = "&#xf242;";
     }, 2000);
     setTimeout(function () {
-    a.innerHTML = "&#xf241;";
+        a.innerHTML = "&#xf241;";
     }, 3000);
     setTimeout(function () {
-    a.innerHTML = "&#xf240;";
+        a.innerHTML = "&#xf240;";
     }, 4000);
 }
+
+function hourglass() {
+  var a;
+  a = document.getElementById("div1");
+  a.innerHTML = "&#xf251;";
+  setTimeout(function () {
+      a.innerHTML = "&#xf252;";
+    }, 1000);
+  setTimeout(function () {
+      a.innerHTML = "&#xf253;";
+    }, 2000);
+}
+
+hourglass();
+setInterval(hourglass, 3000);
 
 chargebattery();
 setInterval(chargebattery, 5000);
