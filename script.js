@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Revert styles or content
     });
 });
-
+/*
 // Animated Typing/Text
 document.addEventListener('DOMContentLoaded', function() {
     const typedText = document.getElementById('typed-text');
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
-
+*/
 // Smooth Scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
