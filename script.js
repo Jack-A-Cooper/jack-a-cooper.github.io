@@ -103,7 +103,6 @@ function changeBackground(section) {
 
         body.classList.add('body-' + section);
     }
-}
 
 // Combined DOMContentLoaded event listener
 document.addEventListener('DOMContentLoaded', function() {
