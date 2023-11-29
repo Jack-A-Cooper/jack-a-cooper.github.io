@@ -97,10 +97,11 @@ function typeLetters(typedText, phrases) {
 }
 
 // change background based on selected page
-function changeBackground(color) {
-    var navbar = document.getElementById('body');
-    if (body) {
-        body.style.backgroundColor = color;
+function changeBackground(section) {
+    var body = document.getElementById('body');
+        body.classList.remove('body-home', 'body-about', /* Add other classes to remove here */);
+
+        body.classList.add('body-' + section);
     }
 }
 
@@ -112,6 +113,8 @@ document.addEventListener('DOMContentLoaded', function() {
             event.preventDefault();
             hideAllSections();
             showSection(link.getAttribute('href').substring(1));
+            const sectionName = link.getAttribute('href').substring(1);
+            changeNavbarBackground(sectionName);
         });
     });
 
