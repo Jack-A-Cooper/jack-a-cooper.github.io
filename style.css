@@ -40,7 +40,6 @@ h1.landing_page {
     font-weight: bold;
     margin: 20px 0;
     padding: 10px;
-    border-bottom: 4px solid #FFF;
 }
 
 h2.landing_page {
@@ -49,7 +48,6 @@ h2.landing_page {
     text-align: center;
     margin: 20px 0;
     padding: 10px;
-    border-bottom: 2px solid #FFF;
 }
 
 header h2 {
