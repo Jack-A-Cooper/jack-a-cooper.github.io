@@ -38,6 +38,15 @@ function setInitialMode() {
     }
 }
 
+// Smooth Scrolling
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
+}
+
 // Hide on loss of focus
 function hideOnDeselect(elementId) {
   var element = document.getElementById(elementId);
