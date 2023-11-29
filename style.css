@@ -281,6 +281,7 @@ li {
   max-width: 350px;
   text-transform: uppercase;
   line-height: .77;
+  padding: 5px;
 }
 
 .fun-look-background {
@@ -289,6 +290,7 @@ li {
   background: linear-gradient(to bottom, #7927b2, #fb3182);
   justify-content: center;
   align-items: center;
+  padding: 5px;
 }
 /* Source: https://codepen.io/SoftwaRealles/pen/dExjRW */
 
