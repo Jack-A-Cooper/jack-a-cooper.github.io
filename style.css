@@ -35,7 +35,7 @@ header h1 {
 
 h1.landing-page {
     color: #666;
-    font-size: 24px;
+    font-size: 36px;
     text-align: center;
     font-weight: bold;
     margin: 20px 0;
@@ -44,7 +44,7 @@ h1.landing-page {
 
 h2.landing-page {
     color: #666;
-    font-size: 16px;
+    font-size: 24px;
     text-align: center;
     margin: 20px 0;
     padding: 10px;
@@ -117,6 +117,10 @@ container.centered-container {
     height: auto;
 }
 
+.svg-divider {
+    margin: 10px 0;
+}
+
 .divider {
     border-bottom: 1px solid #333;
     text-align: center;
@@ -126,16 +130,12 @@ container.centered-container {
 
 .divider span {
     background: #fff;
-    padding: 0 10px;
-}
-
-.svg-divider {
-    margin: 10px 0;
+    padding: 0 5px;
 }
 
 .divider-style line {
     stroke: #666; /* Change to your desired color */
-    stroke-width: 4; /* Adjust the thickness of the line */
+    stroke-width: 1; /* Adjust the thickness of the line */
 }
 
 footer {
