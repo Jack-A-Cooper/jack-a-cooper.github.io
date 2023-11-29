@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 2000);
         }
     }
-}
+});
 
 // Smooth Scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
