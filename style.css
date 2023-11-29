@@ -63,6 +63,7 @@ nav {
     float: right;
     padding: 10px 10px
     gap: 10px;
+    margin-right: 10px;
 }
 
 .nav-toggle {
