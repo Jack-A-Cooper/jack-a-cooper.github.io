@@ -36,6 +36,16 @@ document.getElementById('navToggle').addEventListener('click', function() {
     }
 });
 
+// Hover Effects
+document.querySelectorAll('.hover-effect').forEach(item => {
+    item.addEventListener('mouseover', () => {
+        // Change styles or content
+    });
+    item.addEventListener('mouseout', () => {
+        // Revert styles or content
+    });
+});
+
 // Animated Typing/Text
 const typedText = document.getElementById('typed-text');
 const phrases = ["Phrase 1", "Phrase 2", "Phrase 3"];
