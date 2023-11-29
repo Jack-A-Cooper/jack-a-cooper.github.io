@@ -92,11 +92,13 @@ nav a:hover {
 
 .nav-toggle {
     display: none;
-    width: 75%;
-    max-width: 80%;
+    width: 100%;
+    max-width: 100%;
     cursor: pointer;
     zindex: 15;
+    position: relative;
     left: 10px;
+    top: 55px;
 }
 
 .section {
