@@ -86,12 +86,10 @@ nav a {
     padding: 20px;
 }
 
-container.centered {
+container.centered-container {
     width: 50%;
     max-width: 100%;
     margin: 0 auto;
-    margin-left: 50%;
-    margin-right: 50%;
     padding: 20px;
     justify-content: center;
     align-items: center;
