@@ -37,16 +37,25 @@ document.getElementById('navToggle').addEventListener('click', function() {
 });
 
 // light-dark modes
-const toggle = document.getElementById('mode-toggle');
-toggle.addEventListener('click', () => {
+const modeToggle = document.getElementById('mode-toggle');
+const currentMode = localStorage.getItem('theme');
+
+if (currentMode === 'dark') {
+    document.body.classList.add('dark-mode');
+    modeToggle.textContent = 'Switch to Light Mode';
+}
+
+modeToggle.addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
 
-    // Update the toggle text or appearance as needed
-    if(document.body.classList.contains('dark-mode')){
-        toggle.textContent = 'Switch to Light Mode';
+    let theme = 'light';
+    if (document.body.classList.contains('dark-mode')) {
+        this.textContent = 'Switch to Light Mode';
+        theme = 'dark';
     } else {
-        toggle.textContent = 'Switch to Dark Mode';
+        this.textContent = 'Switch to Dark Mode';
     }
+    localStorage.setItem('theme', theme);
 });
 
 // Lazy Loading for performance
