@@ -102,6 +102,15 @@ nav a {
     margin-right: auto;
 }
 
+.image-border {
+    border: 4px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+}
+
 .divider {
     border-bottom: 1px solid #333;
     text-align: center;
