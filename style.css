@@ -33,7 +33,7 @@ header h1 {
     margin-left:25px;
 }
 
-h1.landing_page {
+h1.landing-page {
     color: #666;
     font-size: 24px;
     text-align: center;
@@ -42,7 +42,7 @@ h1.landing_page {
     padding: 10px;
 }
 
-h2.landing_page {
+h2.landing-page {
     color: #666;
     font-size: 16px;
     text-align: center;
