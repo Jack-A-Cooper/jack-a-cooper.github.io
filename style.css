@@ -33,12 +33,7 @@ header h1 {
     margin-left:25px;
 }
 
-header h2 {
-    margin: 0;
-    flex: 1;
-}
-
-h2.landing_page {
+h1.landing_page {
     color: #4a90e2;
     font-size: 24px;
     text-align: center;
@@ -46,6 +41,20 @@ h2.landing_page {
     margin: 20px 0;
     padding: 10px;
     border-bottom: 2px solid #4a90e2;
+}
+
+h2.landing_page {
+    color: #4a98e2;
+    font-size: 16px;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    border-bottom: 2px solid #4a98e2;
+}
+
+header h2 {
+    margin: 0;
+    flex: 1;
 }
 
 nav {
