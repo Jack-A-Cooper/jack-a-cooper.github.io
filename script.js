@@ -91,18 +91,16 @@ function typeLetters() {
     if (letterIndex < phrases[phraseIndex].length) {
         typedText.textContent += phrases[phraseIndex].charAt(letterIndex);
         letterIndex++;
-        setTimeout(typeLetters, 200); // Typing speed
+        setTimeout(typeLetters, 200);
     } else {
         setTimeout(() => {
             typedText.textContent = "";
             letterIndex = 0;
             phraseIndex = (phraseIndex + 1) % phrases.length;
             typeLetters();
-        }, 2000); // Pause between phrases
+        }, 2000);
     }
 }
-
-typeLetters();
 
 // Smooth Scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -147,8 +145,10 @@ function hourglass() {
     }, 2000);
 }
 
-hourglass();
-setInterval(hourglass, 3000);
+typeLetters();
 
 chargebattery();
 setInterval(chargebattery, 5000);
+
+hourglass();
+setInterval(hourglass, 3000);
