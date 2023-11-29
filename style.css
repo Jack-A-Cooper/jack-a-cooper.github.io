@@ -23,6 +23,34 @@ body.dark-mode {
     color: white;
 }
 
+.body-home {
+    background-color: #E7E8FF;
+}
+
+.body-about {
+    background-color: #E7E8FF;
+}
+
+.body-demos {
+    background-color: #E7E8FF;
+}
+
+.body-projects {
+    background-color: #E7E8FF;
+}
+
+.body-music {
+    background-color: #E7E8FF;
+}
+
+.body-blog {
+    background-color: #E7E8FF;
+}
+
+.body-contact {
+    background-color: #E7E8FF;
+}
+
 header {
     position: fixed;
     top: 0;
