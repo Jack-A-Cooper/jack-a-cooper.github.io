@@ -98,9 +98,9 @@ function typeLetters(typedText, phrases) {
 
 // change background based on selected page
 function changeBackground(color) {
-    var navbar = document.getElementById('navbar');
-    if (navbar) {
-        navbar.style.backgroundColor = color;
+    var navbar = document.getElementById('body');
+    if (body) {
+        body.style.backgroundColor = color;
     }
 }
 
