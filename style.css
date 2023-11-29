@@ -138,7 +138,7 @@ nav a:hover {
 
 .image-container img {
     max-width: 100%;
-    width: 12%;
+    width: 14%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -154,7 +154,7 @@ nav a:hover {
 }
 
 .photo-grid {
-  max-width: 85%;
+  max-width: 100%;
   margin: auto;
   padding: 10px;
 }
