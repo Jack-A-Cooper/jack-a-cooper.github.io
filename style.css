@@ -112,8 +112,8 @@ nav a:hover {
     margin: 0 auto;
 }
 
-.li {
-    padding: 10px;
+li {
+    padding: 15px;
 }
 
 .centered-container {
