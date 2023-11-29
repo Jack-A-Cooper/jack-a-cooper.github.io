@@ -3,12 +3,24 @@ html, body {
     margin: 0;
 }
 
+/* Default light mode styles */
 body {
     display: flex;
     flex-direction: column;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #AAA;
+    background-color: white;
+    color: black;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: black;
+    color: white;
 }
 
 header {
@@ -34,7 +46,7 @@ header h1 {
 }
 
 h1.landing-page {
-    color: #666;
+    color: #16415C;
     font-size: 36px;
     text-align: center;
     font-weight: bold;
@@ -43,7 +55,7 @@ h1.landing-page {
 }
 
 h2.landing-page {
-    color: #666;
+    color: #16415C;
     font-size: 24px;
     text-align: center;
     margin: 20px 0;
@@ -141,7 +153,7 @@ container.centered-container {
 }
 
 .divider-style-alt line {
-    stroke: #666;
+    stroke: #16415C;
     stroke-width: 1;
 }
 
