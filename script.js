@@ -107,13 +107,29 @@ function changeBackground(section) {
 // Combined DOMContentLoaded event listener
 document.addEventListener('DOMContentLoaded', function() {
     // Navigation and Section Display
+    
     document.querySelectorAll('nav a').forEach(link => {
-        link.addEventListener('click', event => {
+        link.addEventListener('click', function(event) {
             event.preventDefault();
+    
+            // Remove active class from all links
+            document.querySelectorAll('nav a').forEach(navLink => {
+                navLink.classList.remove('active-link');
+            });
+    
+            // Add active class to clicked link
+            this.classList.add('active-link');
+    
+            // Your existing code for hiding/showing sections
             hideAllSections();
-            showSection(link.getAttribute('href').substring(1));
-            const sectionName = link.getAttribute('href').substring(1);
-            changeBackground(sectionName);
+            showSection(this.getAttribute('href').substring(1));
+            var currentHash = window.location.hash;
+            if (currentHash) {
+                var activeLink = document.querySelector(`nav a[href="${currentHash}"]`);
+                if (activeLink) {
+                    activeLink.classList.add('active-link');
+                }
+            }
         });
     });
 
