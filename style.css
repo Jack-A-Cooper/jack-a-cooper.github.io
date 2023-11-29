@@ -113,6 +113,11 @@ nav a:hover {
     padding: 25px;
 }
 
+.p {
+    width: 70%;
+    max-width: 100%;
+}
+
 .centered-container {
     width: 70%;
     max-width: 100%;
