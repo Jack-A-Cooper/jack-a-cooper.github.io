@@ -73,14 +73,14 @@ function typeLetters(typedText, phrases) {
         if (letterIndex < phrases[phraseIndex].length) {
             typedText.textContent += phrases[phraseIndex].charAt(letterIndex);
             letterIndex++;
-            setTimeout(type, 200); // Typing speed
+            setTimeout(type, 100); // Typing speed
         } else {
             setTimeout(() => {
                 typedText.textContent = "";
                 letterIndex = 0;
                 phraseIndex = (phraseIndex + 1) % phrases.length;
                 type();
-            }, 2000); // Pause between phrases
+            }, 1000); // Pause between phrases
         }
     }
 
@@ -141,6 +141,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initiate typing animation
     const typedTextElement = document.getElementById('typing-animation');
     if (typedTextElement) {
-        typeLetters(typedTextElement, ["Yo!", "Hey!", "What's Up!"]);
+        typeLetters(typedTextElement, ["Yo!", "Hey!", "Ayo!", "What's Up!"]);
     }
 });
