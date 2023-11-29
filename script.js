@@ -14,7 +14,7 @@ function showSection(sectionId) {
     }
 }
 
-// Toggle Dark-Light Modes
+// Toggle Dark-Light Modes - WIP
 function toggleDarkMode() {
     const body = document.body;
     const isDarkMode = body.classList.toggle('dark-mode');
