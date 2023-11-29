@@ -99,7 +99,7 @@ function typeLetters(typedText, phrases) {
 // change background based on selected page
 function changeBackground(section) {
     var body = document.getElementById('body');
-        body.classList.remove('body-home', 'body-about', /* Add other classes to remove here */);
+        body.classList.remove('body-home', 'body-about', 'body-demos', 'body-projects', 'body-music', 'body-blog', 'body-contact');
 
         body.classList.add('body-' + section);
     }
