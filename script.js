@@ -96,42 +96,53 @@ function typeLetters(typedText, phrases) {
     type();
 }
 
-// change background based on selected page
+// Change background based on selected page
 function changeBackground(section) {
     var body = document.getElementById('body');
-        body.classList.remove('body-home', 'body-about', 'body-demos', 'body-projects', 'body-music', 'body-blog', 'body-contact');
-
-        body.classList.add('body-' + section);
+    if (!body) {
+        console.error('Body element not found');
+        return;
     }
+    body.classList.remove('body-home', 'body-about', 'body-demos', 'body-projects', 'body-music', 'body-blog', 'body-contact');
+    body.classList.add('body-' + section);
+}
 
-// Combined DOMContentLoaded event listener
-document.addEventListener('DOMContentLoaded', function() {
-    // Navigation and Section Display
-    
-    document.querySelectorAll('nav a').forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault();
-    
-            // Remove active class from all links
-            document.querySelectorAll('nav a').forEach(navLink => {
-                navLink.classList.remove('active-link');
-            });
-    
-            // Add active class to clicked link
-            this.classList.add('active-link');
-    
-            // Your existing code for hiding/showing sections
-            hideAllSections();
-            showSection(this.getAttribute('href').substring(1));
-            var currentHash = window.location.hash;
-            if (currentHash) {
-                var activeLink = document.querySelector(`nav a[href="${currentHash}"]`);
-                if (activeLink) {
-                    activeLink.classList.add('active-link');
-                }
-            }
-        });
+// Handle click event for navigation links
+function handleNavLinkClick(event) {
+    event.preventDefault();
+
+    // Remove active class from all links
+    document.querySelectorAll('nav a').forEach(navLink => {
+        navLink.classList.remove('active-link');
     });
+
+    // Add active class to clicked link
+    this.classList.add('active-link');
+
+    // Hide all sections and show the selected section
+    hideAllSections();
+    var sectionId = this.getAttribute('href').substring(1);
+    showSection(sectionId);
+    
+    // Change background
+    changeBackground(sectionId);
+}
+
+// Set up event listeners when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', handleNavLinkClick);
+    });
+
+    // Highlight the link corresponding to the current hash in the URL
+    var currentHash = window.location.hash.substring(1);
+    if (currentHash) {
+        var activeLink = document.querySelector(`nav a[href="#${currentHash}"]`);
+        if (activeLink) {
+            activeLink.classList.add('active-link');
+        }
+        changeBackground(currentHash);
+    }
 
     // Nav Toggle
     var navToggle = document.getElementById('navToggle');
