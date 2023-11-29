@@ -224,20 +224,26 @@ li {
     font-size: 24px;
 }
 
+/* Source: https://codepen.io/SoftwaRealles/pen/dExjRWO */
 .fun-look {
-    font-size: 24px;
-    background: teal;
-    background-opacity: 25%;
-    background-size: auto auto;
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(to right, #7927b2, #fb3182);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: 350px;
+  text-transform: uppercase;
+  line-height: .77;
 }
 
-.fun {
-    background: #16415C;
-    opacity: 80%;
-    display: inline;
-    font-size: 36px;
-    padding: 20px;
+.fun-look-background {
+  display: grid;
+  grid-template-rows: 1fr 50px;
+  background: linear-gradient(to bottom, #7927b2, #fb3182);
+  justify-content: center;
+  align-items: center;
 }
+/* Source: https://codepen.io/SoftwaRealles/pen/dExjRW */
 
 /* Source: https://codepen.io/alvarotrigo/pen/PoKMyNO */
 .animate-characters
