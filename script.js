@@ -36,6 +36,19 @@ document.getElementById('navToggle').addEventListener('click', function() {
     }
 });
 
+// light-dark modes
+const toggle = document.getElementById('mode-toggle');
+toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+
+    // Update the toggle text or appearance as needed
+    if(document.body.classList.contains('dark-mode')){
+        toggle.textContent = 'Switch to Light Mode';
+    } else {
+        toggle.textContent = 'Switch to Dark Mode';
+    }
+});
+
 // Lazy Loading for performance
 document.addEventListener('DOMContentLoaded', function() {
     const lazyImages = [].slice.call(document.querySelectorAll('img.lazy'));
