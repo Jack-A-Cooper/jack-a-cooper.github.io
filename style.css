@@ -104,6 +104,7 @@ container.centered-container {
     margin: 0 auto;
     padding: 20px;
     float: center;
+    align-contents: center;
 }
 
 .image-container {
