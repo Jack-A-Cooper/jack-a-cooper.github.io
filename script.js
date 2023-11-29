@@ -112,16 +112,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Smooth Scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', event => {
-            event.preventDefault();
-            document.querySelector(anchor.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-
     // Initiate typing animation
     const typedTextElement = document.getElementById('typing-animation');
     if (typedTextElement) {
