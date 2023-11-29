@@ -61,27 +61,6 @@ function typeLetters(typedText, phrases) {
     type();
 }
 
-// Animated Battery and Hourglass
-function chargebattery() {
-    var a = document.getElementById("battery-animation");
-    if (a) {
-        a.innerHTML = "&#xf244;";
-        setTimeout(() => { a.innerHTML = "&#xf243;"; }, 1000);
-        setTimeout(() => { a.innerHTML = "&#xf242;"; }, 2000);
-        setTimeout(() => { a.innerHTML = "&#xf241;"; }, 3000);
-        setTimeout(() => { a.innerHTML = "&#xf240;"; }, 4000);
-    }
-}
-
-function hourglass() {
-    var a = document.getElementById("hourglass-animation");
-    if (a) {
-        a.innerHTML = "&#xf251;";
-        setTimeout(() => { a.innerHTML = "&#xf252;"; }, 1000);
-        setTimeout(() => { a.innerHTML = "&#xf253;"; }, 2000);
-    }
-}
-
 // Combined DOMContentLoaded event listener
 document.addEventListener('DOMContentLoaded', function() {
     // Navigation and Section Display
@@ -148,11 +127,4 @@ document.addEventListener('DOMContentLoaded', function() {
     if (typedTextElement) {
         typeLetters(typedTextElement, ["Yo!", "Hey!", "What's Up!"]);
     }
-
-    // Initiate battery and hourglass animations
-    chargebattery();
-    setInterval(chargebattery, 5000);
-
-    hourglass();
-    setInterval(hourglass, 3000);
 });
