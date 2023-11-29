@@ -40,7 +40,7 @@ document.getElementById('navToggle').addEventListener('click', function() {
 // Courtesy of W3Schools: https://www.w3schools.com/howto/howto_js_animate_icons.asp
 function chargebattery() {
     var a;
-    a = document.getElementById("animated-battery-charging");
+    a = document.getElementById("battery-animation");
     a.innerHTML = "&#xf244;";
     setTimeout(function () {
         a.innerHTML = "&#xf243;";
@@ -58,7 +58,7 @@ function chargebattery() {
 
 function hourglass() {
   var a;
-  a = document.getElementById("div1");
+  a = document.getElementById("hourglass-animation");
   a.innerHTML = "&#xf251;";
   setTimeout(function () {
       a.innerHTML = "&#xf252;";
