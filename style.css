@@ -99,16 +99,14 @@ nav a {
     padding: 25px;
 }
 
-container.centered-container {
+.centered-container {
     width: 50%;
-    max-width: 100%;
     margin: 0 auto;
-    padding: 25px;
-    float: center;
-    align-contents: center;
-    margin-left: 70px;
-    margin-right: 70px;
-}
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 
 .image-container {
     display: flex;
