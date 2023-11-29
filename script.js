@@ -36,6 +36,29 @@ document.getElementById('navToggle').addEventListener('click', function() {
     }
 });
 
+// Animated Typing/Text
+const typedText = document.getElementById('typed-text');
+const phrases = ["Phrase 1", "Phrase 2", "Phrase 3"];
+let phraseIndex = 0;
+let letterIndex = 0;
+
+function typeLetters() {
+    if (letterIndex < phrases[phraseIndex].length) {
+        typedText.textContent += phrases[phraseIndex].charAt(letterIndex);
+        letterIndex++;
+        setTimeout(typeLetters, 200); // Typing speed
+    } else {
+        setTimeout(() => {
+            typedText.textContent = "";
+            letterIndex = 0;
+            phraseIndex = (phraseIndex + 1) % phrases.length;
+            typeLetters();
+        }, 2000); // Pause between phrases
+    }
+}
+
+typeLetters();
+
 // Smooth Scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
