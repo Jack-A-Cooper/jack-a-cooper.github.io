@@ -470,7 +470,7 @@ nav {
   -webkit-text-fill-color: transparent;
   animation: textclip 4s linear infinite;
   display: inline-block;
-      font-size: 10px;
+      font-size: 24px;
 }
 
 @keyframes textclip {
@@ -499,7 +499,7 @@ nav {
   -webkit-text-fill-color: transparent;
   animation: textclip 1s linear infinite;
   display: inline-block;
-      font-size: 10px;
+      font-size: 16px;
 }
 
 footer {
