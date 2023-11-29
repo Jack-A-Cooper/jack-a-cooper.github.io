@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Animated Typing/Text
 const typedText = document.getElementById('typing-animation');
-const phrases = ["Phrase 1", "Phrase 2", "Phrase 3"];
+const phrases = ["Yo!", "Hey!", "What's Up!"];
 let phraseIndex = 0;
 let letterIndex = 0;
 
@@ -124,8 +124,6 @@ function typeLetters() {
         }, 2000); // Pause between phrases
     }
 }
-
-typeLetters();
 
 // Smooth Scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
