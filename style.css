@@ -498,6 +498,8 @@ nav {
   background-clip: border-box;
   background-size: 200% auto;
   color: #fff;
+  max-width: 100%;
+  width: 80%;
   background-clip: text;
   text-fill-color: transparent;
   -webkit-background-clip: text;
