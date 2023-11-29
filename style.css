@@ -212,7 +212,7 @@ footer {
 }
 
 /* Responsive styles for mobile devices */
-@media (max-width: auto) {
+@media (max-width: 600px) {
 .nav-toggle {
         display: block;
     }
