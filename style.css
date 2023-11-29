@@ -89,24 +89,25 @@ nav a {
 
 .section {
     margin-top: 75px;
+    padding-bottom: 25px;
 }
 
 .container {
     width: 50%;
     max-width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 25px;
 }
 
 container.centered-container {
     width: 50%;
     max-width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 25px;
     float: center;
     align-contents: center;
-    margin-left: 40%;
-    margin-right: 40%;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 .image-container {
@@ -140,7 +141,7 @@ container.centered-container {
 .divider {
     border-bottom: 1px solid  #16415C;
     text-align: center;
-    margin: 20px 0;
+    margin: 25px 0;
     line-height: 0.1em;
 }
 
@@ -151,7 +152,7 @@ container.centered-container {
 
 .divider-style-main line {
     stroke: #16415C;
-    stroke-width: 4;
+    stroke-width: 3;
 }
 
 .divider-style-alt line {
