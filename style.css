@@ -157,10 +157,8 @@ container.centered-container {
 }
 
 .button {
-    float: center;
-    padding: 10px 10px
-    gap: 10px;
-    margin-right: 25px;
+    float: left;
+    padding: 25px 25px
     text-align: center;
 }
 
