@@ -110,7 +110,7 @@ nav.a:hover {
 
 .centered-container {
     width: 50%;
-    margin: 0 auto;
+    margin: 0 0;
     position: absolute;
     top: 50%;
     left: 50%;
