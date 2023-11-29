@@ -95,9 +95,6 @@ nav a:hover {
     width: 75%;
     max-width: 80%;
     cursor: pointer;
-    background-color: black;
-    padding-left: 25px;
-    z-index: 15;
 }
 
 .section {
