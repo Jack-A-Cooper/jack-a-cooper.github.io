@@ -56,7 +56,7 @@ header h2 {
 }
 
 nav {
-    float: right;
+    float: center;
     padding: 10px 10px
     gap: 10px;
     margin-right: 25px;
