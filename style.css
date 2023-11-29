@@ -104,6 +104,7 @@ nav.a:hover {
     max-width: 100%;
     margin: 0 auto;
     padding: 25px;
+    position: relative;
 }
 
 .centered-container {
@@ -114,6 +115,8 @@ nav.a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    position: relative;
+}
 
 .image-container {
     display: flex;
