@@ -96,6 +96,14 @@ function typeLetters(typedText, phrases) {
     type();
 }
 
+// change background based on selected page
+function changeBackground(color) {
+    var navbar = document.getElementById('navbar');
+    if (navbar) {
+        navbar.style.backgroundColor = color;
+    }
+}
+
 // Combined DOMContentLoaded event listener
 document.addEventListener('DOMContentLoaded', function() {
     // Navigation and Section Display
