@@ -164,6 +164,14 @@ container.centered-container {
     float: left;
     padding: 25px 25px
     text-align: center;
+    transition-duration: 0.4s;
+    background-color: white;
+    color: black;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
 }
 
 .typed-text-animation {
