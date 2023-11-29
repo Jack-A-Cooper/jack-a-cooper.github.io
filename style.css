@@ -63,10 +63,12 @@ nav a {
 
 .container {
     width: 80%;
-    margin: auto;
-    overflow: hidden;
-    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #AAA;
+    padding: 20px;
 }
+
 
 .image-container {
     display: flex;
