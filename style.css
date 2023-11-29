@@ -38,6 +38,16 @@ header h2 {
     flex: 1;
 }
 
+h2.landing_page {
+    color: #4a90e2;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px;
+    border-bottom: 2px solid #4a90e2;
+}
+
 nav {
     float: right;
     padding: 10px 10px
