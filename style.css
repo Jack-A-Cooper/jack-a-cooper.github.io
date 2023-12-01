@@ -31,7 +31,7 @@ body.dark-mode {
 .body-about {
   background: linear-gradient(-90deg, #ee6473, #e7375e, #23a6d5, #23d54b);
   background-size: 400% 400%;
-  animation: gradient-background-1 30s ease infinite;
+  animation: gradient-background-1 1s ease infinite;
   height: 100vh;
 }
 
