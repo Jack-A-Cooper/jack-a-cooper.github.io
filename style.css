@@ -125,7 +125,7 @@ nav {
 }
 
 nav a {
-    color: gold;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
     transition-duration: 0.4s;
@@ -442,17 +442,17 @@ header {
     position: relative;
     left: 5px;
     top: -30px;
-    color: gold;
+    color: white;
 }
 
 nav {
     background: #333;
     position: fixed;
     left: 0;
-    top: 60;
+    top: 65;
     text-align: center;
     opacity: 80%;
-    color: gold;
+    color: white;
 }
 
 .animate-characters
