@@ -5,19 +5,20 @@ import Box from '@mui/material/Box';
 import { 
     ContainerBox,
     CenterContainerBox,
+    ImageContainer,
     HeaderTypography,
     SubHeaderTypography,
     ParagraphTypography,
     BackgroundedParagraphTypography,
     StyledLink,
     StyledImage,
-    HomePageStyles,
+    AboutPageStyles,
     SectionContainerBox,
 } from './Styles';
 
 const About = () => {
   return (
-    <Box sx={HomePageStyles}>
+    <Box sx={AboutPageStyles}>
       <SectionContainerBox>
         <HeaderTypography>About Me!</HeaderTypography>
         <ContainerBox>
@@ -29,28 +30,22 @@ const About = () => {
              I'm excited to embark on this next chapter, applying the skills and insights I've gained to make a tangible impact in the world of tech and beyond.
           </BackgroundedParagraphTypography>
         </ContainerBox>
-        <ContainerBox>
-          <CenterContainerBox>
+        <CenterContainerBox>
+          <ImageContainer>
             <StyledImage src={p1} alt=" "/>
             <StyledImage src={p2} alt=" "/>
             <StyledImage src={p3} alt=" "/>
-          </CenterContainerBox>
-          <CenterContainerBox>
             <StyledImage src={p4} alt=" "/>
             <StyledImage src={p5} alt=" "/>
             <StyledImage src={p6} alt=" "/>
-          </CenterContainerBox>
-          <CenterContainerBox>
             <StyledImage src={p7} alt=" "/>
             <StyledImage src={p8} alt=" "/>
             <StyledImage src={p9} alt=" "/>
-          </CenterContainerBox>
-          <CenterContainerBox>
             <StyledImage src={p10} alt=" "/>
             <StyledImage src={p11} alt=" "/>
             <StyledImage src={p12} alt=" "/>
-          </CenterContainerBox>
-        </ContainerBox>
+          </ImageContainer>
+        </CenterContainerBox>
       </SectionContainerBox>
     </Box>
   );

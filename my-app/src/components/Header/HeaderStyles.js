@@ -41,6 +41,8 @@ export const StyledMenuButton = styled(IconButton)(({ theme }) => ({
   position: 'absolute',
   left: theme.spacing(2),
   top: theme.spacing(1),
+  border: `1px solid ${theme.palette.mode === 'dark' ? 'white' : 'black'}`,
+  backgroundColor: 'black',
 }));
 
 export const StyledNavButtons = styled(Box)(({ theme }) => ({
@@ -79,13 +81,13 @@ export const StyledNavLinkBar = styled(({ isActive, ...otherProps }) => <RouterL
 }));
 
 export const StyledNavLink = styled(Button)(({ theme, isActive }) => ({
-  color: isActive ? 'white' : 'black',
+  color: isActive ? '#FC440F' : 'black',
   background: isActive ? 'black' : 'none',
   '& .MuiListItem-root': {
-    backgroundColor: isActive ? theme.palette.action.selected : 'transparent',
+    backgroundColor: isActive ? '#FC440F' : 'black',
   },
   '&:hover': {
-       background: 'white',
-       color: 'black',
+       background: 'black',
+       color: '#FC440F',
     },
 }));

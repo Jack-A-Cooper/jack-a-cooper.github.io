@@ -37,12 +37,12 @@ const Home = () => {
             <SubHeaderTypography>Work History/Resumes</SubHeaderTypography>
             </ContainerBox>
             <BackgroundedParagraphTypography>
-                <ParagraphTypography>My current up to date Professional Resume:
-                    <StyledLink href={professionalResume} rel="noreferrer" target="_blank"><div>Professional Resume</div></StyledLink>
-                </ParagraphTypography>
-                <ParagraphTypography>My current up to date General Workforce Resume:
-                    <StyledLink href={generalResume} rel="noreferrer" target="_blank"><div>General Resume</div></StyledLink>
-                </ParagraphTypography>
+                <StyledLink href={professionalResume} rel="noreferrer" target="_blank">
+                    <div>Professional Resume</div>
+                </StyledLink>
+                <StyledLink href={generalResume} rel="noreferrer" target="_blank">
+                    <div>General Resume</div>
+                </StyledLink>
             </BackgroundedParagraphTypography>
         </SectionContainerBox>
     </Box>
