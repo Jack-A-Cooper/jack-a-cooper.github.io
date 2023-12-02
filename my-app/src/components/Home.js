@@ -36,8 +36,8 @@ function Home() {
             </svg>
         </div>
         <div className="container">
-            <p>My current up to date Professional Resume: <a href={professionalResume} target="_blank">Professional Resume</a></p>
-            <p>My current up to date General Workforce Resume: <a href={gerneralResume} target="_blank">General Resume</a></p>
+            <p>My current up to date Professional Resume: <a href={professionalResume} rel="noreferrer" target="_blank">Professional Resume</a></p>
+            <p>My current up to date General Workforce Resume: <a href={gerneralResume} rel="noreferrer" target="_blank">General Resume</a></p>
         </div>
       </div>
     </styledSection>
