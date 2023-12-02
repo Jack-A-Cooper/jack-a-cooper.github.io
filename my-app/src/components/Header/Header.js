@@ -1,8 +1,13 @@
 // Header.js
-import React, { useState } from 'react';
-import { Typography, Drawer, List, ListItem, ListItemText } from '@mui/material';
+import { useContext, useState } from 'react';
+import { useLocation, Link } from 'react-router-dom';
+import { List, ListItem, ListItemText, Drawer, } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
+import { ColorModeContext } from '../../App';
 import MenuIcon from '@mui/icons-material/Menu';
-import { Link, useLocation } from 'react-router-dom';
+import IconButton from '@mui/material/IconButton';
+import Brightness7Icon from '@mui/icons-material/Brightness7'; // Light mode icon
+import Brightness4Icon from '@mui/icons-material/Brightness4'; // Dark mode icon
 import {
   StyledAppBar,
   StyledToolbar,
@@ -13,8 +18,14 @@ import {
   StyledNavLink,
   StyledNavLinkBar,
 } from './HeaderStyles';
+import { 
+  AppTitleName,
+  StyledButton,
+} from '../Styles';
 
-function Header() {
+function Header({ toggleDarkMode, isDarkMode }) {
+  const theme = useTheme();
+  const colorMode = useContext(ColorModeContext);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const location = useLocation();
   
@@ -61,6 +72,9 @@ function Header() {
           <ListItem button>
             <ListItemText primary="Contact" />
           </ListItem>
+          <StyledButton onClick={colorMode.toggleColorMode} color="inherit" sx={{ marginLeft: 'auto' }}>
+                {isDarkMode ? <Brightness7Icon /> : <Brightness4Icon />}
+          </StyledButton>
         </StyledNavLinkBar>
       </List>
     </StyledDrawerContent>
@@ -70,9 +84,9 @@ function Header() {
     <>
       <StyledAppBar>
         <StyledToolbar>
-          <Typography variant="h6" sx={{ alignSelf: 'center' }}>
+          <AppTitleName>
             Jack Alexander Cooper
-          </Typography>
+          </AppTitleName>
           <StyledNavButtons>
             <StyledNavLink component={Link} to="/" isActive={isActive('/')}>
               Home
@@ -95,6 +109,9 @@ function Header() {
             <StyledNavLink component={Link} to="/Contact" isActive={isActive('/Contact')}>
               Contact
             </StyledNavLink>
+            <StyledButton onClick={colorMode.toggleColorMode} color="inherit" sx={{ marginLeft: 'auto' }}>
+                {isDarkMode ? <Brightness7Icon /> : <Brightness4Icon />}
+            </StyledButton>
           </StyledNavButtons>
           <StyledMenuButton
             color="inherit"

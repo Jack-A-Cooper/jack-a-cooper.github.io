@@ -1,7 +1,7 @@
 // Music.js
 import React from 'react';
 
-function Music() {
+const Music = () => {
   return (
     <div id="music" className="section">
       <div className="container">

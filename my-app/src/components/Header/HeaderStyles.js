@@ -8,6 +8,7 @@ import Button from '@mui/material/Button';
 import { Link as RouterLink } from 'react-router-dom';
 
 export const StyledAppBar = styled(AppBar)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'dark' ? '#FC440F' : theme.palette.primary.main,
   padding: theme.spacing(1),
   zIndex: theme.zIndex.drawer + 1,
   position: "fixed",
@@ -15,6 +16,7 @@ export const StyledAppBar = styled(AppBar)(({ theme }) => ({
     easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.leavingScreen,
   }),
+  color: theme.palette.getContrastText(theme.palette.mode === 'dark' ? '#FC440F' : theme.palette.primary.main),
 }));
 
 export const StyledToolbar = styled(Toolbar)(({ theme }) => ({
@@ -36,7 +38,6 @@ export const StyledMenuButton = styled(IconButton)(({ theme }) => ({
   [theme.breakpoints.up('sm')]: {
       display: 'none',
   },
-  
   position: 'absolute',
   left: theme.spacing(2),
   top: theme.spacing(1),
@@ -51,12 +52,12 @@ export const StyledNavButtons = styled(Box)(({ theme }) => ({
 }));
 
 export const StyledDrawerContent = styled(Box)(({ theme }) => ({
+  marginTop: theme.spacing(15),
   [theme.breakpoints.up('xs')]: {
-      marginTop: theme.spacing(7),
       display: 'block',
+      marginTop: theme.spacing(20),
   },
   [theme.breakpoints.up('sm')]: {
-      marginTop: theme.spacing(9),
       display: 'none',
   },
 }));
@@ -72,16 +73,19 @@ export const StyledNavLinkBar = styled(({ isActive, ...otherProps }) => <RouterL
     backgroundColor: isActive ? theme.palette.action.selected : 'transparent',
   },
   '&:hover': {
-       background: theme.palette.primary.contrastText,
-       color: theme.palette.primary.main,
+       background: 'white',
+       color: 'black',
     },
 }));
 
 export const StyledNavLink = styled(Button)(({ theme, isActive }) => ({
-  color: isActive ? theme.palette.primary.main  : theme.palette.primary.contrastText,
-  background: isActive ? theme.palette.primary.contrastText : 'none',
+  color: isActive ? 'white' : 'black',
+  background: isActive ? 'black' : 'none',
+  '& .MuiListItem-root': {
+    backgroundColor: isActive ? theme.palette.action.selected : 'transparent',
+  },
   '&:hover': {
-       background: theme.palette.primary.contrastText,
-       color: theme.palette.primary.main,
+       background: 'white',
+       color: 'black',
     },
 }));

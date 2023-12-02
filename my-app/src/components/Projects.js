@@ -1,7 +1,7 @@
 // Projects.js
 import React from 'react';
 
-function Projects() {
+const Projects = () => {
   return (
     <div id="projects" className="section">
       <div className="container">

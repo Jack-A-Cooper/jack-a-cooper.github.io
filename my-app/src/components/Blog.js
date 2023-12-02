@@ -1,7 +1,7 @@
 // Blog.js
 import React from 'react';
 
-function Blog() {
+const Blog = () => {
   return (
     <div id="blog" className="section">
       <div class="container">

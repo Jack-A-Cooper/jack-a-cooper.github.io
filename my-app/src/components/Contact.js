@@ -1,7 +1,7 @@
 // Contact.js
 import React from 'react';
 
-function Contact() {
+const Contact = () => {
   return (
     <div id="contact" className="section">
       <div className="container">

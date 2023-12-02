@@ -1,6 +1,7 @@
-import React from 'react';
+// App.js
+import React, { createContext, useMemo, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Drawer from './components/Header/Header';
+import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home';
 import About from './components/About';
@@ -10,27 +11,54 @@ import Music from './components/Music';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
 import './App.css';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
 
-function App() {
+export const ColorModeContext = createContext({ toggleColorMode: () => {} });
+
+export default function App() {
+  const [mode, setMode] = useState('light');
+
+  const colorMode = useMemo(
+    () => ({
+      toggleColorMode: () => {
+        setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
+      },
+    }),
+    [],
+  );
+
+  const theme = useMemo(
+    () => createTheme({
+      palette: {
+        mode,
+      },
+    }),
+    [mode],
+  );
+  
   return (
-    <Router>
-      <div className="App">
-        <Drawer />
-        <div style={{ paddingBottom: '120px' }}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/Demos" element={<Demos />} />
-            <Route path="/Projects" element={<Projects />} />
-            <Route path="/Music" element={<Music />} />
-            <Route path="/Blog" element={<Blog />} />
-            <Route path="/Contact" element={<Contact />} />
-          </Routes>
-        </div>
-        <Footer />
-      </div>
-    </Router>
+    <ColorModeContext.Provider value={colorMode}>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Router>
+          <div className="App">
+            <Header />
+            <div style={{ paddingBottom: '120px' }}>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/demos" element={<Demos />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/music" element={<Music />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/contact" element={<Contact />} />
+              </Routes>
+            </div>
+            <Footer />
+          </div>
+        </Router>
+      </ThemeProvider>
+    </ColorModeContext.Provider>
   );
 }
-
-export default App;

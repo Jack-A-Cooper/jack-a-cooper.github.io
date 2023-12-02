@@ -2,7 +2,7 @@
 import React from 'react';
 import { cImg1, cImg2 } from '../images/content';
 
-function Demos() {
+const Demos = () => {
   return (
     <div id="demos" className="section">
       <div className="container">
