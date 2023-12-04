@@ -192,7 +192,7 @@ export const StyledLink = styled(Link)(({ theme }) => ({
 export const StyledButton = styled(Button)(({ theme }) => ({
   margin: theme.spacing(1),
   color: theme.palette.mode === 'dark' ? '#ABB0B8' : 'black',
-  backgroundColor: theme.palette.mode === 'dark' ? 'gold' : '#ABB0B8',
+  backgroundColor: theme.palette.mode === 'dark' ? 'theme.palette.primary.main' : '#ABB0B8',
   border: `1px solid ${theme.palette.mode === 'dark' ? '#ABB0B8' : '#ABB0B8'}`,
   '&:hover': {
     backgroundColor: theme.palette.mode === 'dark' ? 'white' : 'black',
