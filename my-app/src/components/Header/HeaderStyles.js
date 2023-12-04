@@ -9,9 +9,9 @@ import { Link as RouterLink } from 'react-router-dom';
 
 export const StyledAppBar = styled(AppBar)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#B8A598' : theme.palette.primary.main,
-  padding: theme.spacing(1),
+  padding: theme.spacing(2),
   zIndex: theme.zIndex.drawer + 1,
-  position: "fixed",
+  position: "relative",
   transition: theme.transitions.create(['margin', 'width'], {
     easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.leavingScreen,
@@ -39,6 +39,7 @@ export const StyledMenuButton = styled(IconButton)(({ theme }) => ({
       display: 'none',
   },
   position: 'absolute',
+  padding: '8px',
   left: theme.spacing(2),
   top: theme.spacing(1),
   border: `1px solid ${theme.palette.mode === 'dark' ? 'white' : 'black'}`,
@@ -55,13 +56,13 @@ export const StyledNavButtons = styled(Box)(({ theme }) => ({
 }));
 
 export const StyledDrawerContent = styled(Box)(({ theme }) => ({
-  marginTop: theme.spacing(15),
   [theme.breakpoints.up('xs')]: {
       display: 'block',
-      marginTop: theme.spacing(20),
+      marginTop: theme.spacing(18),
   },
   [theme.breakpoints.up('sm')]: {
       display: 'none',
+      marginTop: theme.spacing(0),
   },
 }));
 

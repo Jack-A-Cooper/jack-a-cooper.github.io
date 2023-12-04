@@ -12,22 +12,13 @@ import { List, ListItem, ListItemText } from '@mui/material';
 
 // Section Container style
 export const SectionContainerBox = styled(Box)(({ theme }) => ({
-  padding: theme.spacing(12),
   margin: '0 auto',
-  margintop: '120px',
-  [theme.breakpoints.down('md')]: {
-    padding: theme.spacing(8),
-  },
-  [theme.breakpoints.down('sm')]: {
-    padding: theme.spacing(4),
-  },
 }));
 
 // Container styles
 
 // Container style
 export const ContainerBox = styled(Box)(({ theme }) => ({
-  display: 'flex',
   padding: theme.spacing(2),
   margin: '0 auto',
 }));
@@ -35,7 +26,6 @@ export const ContainerBox = styled(Box)(({ theme }) => ({
 // Center Container style
 export const CenterContainerBox = styled(Box)(({ theme }) => ({
   textAlign: 'center',
-  display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
 }));
@@ -43,7 +33,6 @@ export const CenterContainerBox = styled(Box)(({ theme }) => ({
 // Left Container style
 export const LeftJustifiedContainerBox = styled(Box)(({ theme }) => ({
   textAlign: 'left',
-  display: 'flex',
   alignItems: 'left',
   justifyContent: 'left',
 }));
@@ -83,6 +72,7 @@ export const HeaderTypography = styled(Typography)(({ theme }) => ({
   textAlign: 'center',
   textTransform: 'uppercase',
   letterSpacing: '12px',
+  paddingBottom: theme.spacing(2),
   [theme.breakpoints.down('md')]: {
     fontSize: '6rem',
   },
@@ -92,10 +82,9 @@ export const HeaderTypography = styled(Typography)(({ theme }) => ({
   [theme.breakpoints.down('xs')]: {
     fontSize: '1.5rem',
   },
-  marginBottom: theme.spacing(2),
   borderBottom: `2px solid ${theme.palette.mode === 'dark' ? '#ABB0B8' : 'black'}`,
   fontFamily: '"Montserrat", sans-serif',
-  maxWidth: '100%',
+  borderBottomWidth: '70%',
 }));
 
 // SubHeader Typography style (H2)
@@ -104,6 +93,7 @@ export const SubHeaderTypography = styled(Typography)(({ theme }) => ({
   fontSize: '4rem',
   fontWeight: 'bold',
   textAlign: 'center',
+  textTransform: 'uppercase',
   paddingBottom: '2px',
   marginBottom: theme.spacing(1),
   display: 'inline-block',
@@ -119,13 +109,14 @@ export const SubHeaderTypography = styled(Typography)(({ theme }) => ({
   color: theme.palette.mode === 'dark' ? theme.palette.primary.light : '#5D4C54',
   borderBottom: `2px solid ${theme.palette.mode === 'dark' ? '#6F7378' : 'black'}`,
   textShadow: theme.palette.mode === 'dark' ? `2px 2px 0px ${theme.palette.grey[600]}` : `2px 2px 0px ${theme.palette.grey[150]}`,
-  maxWidth: '75%',
+  maxWidth: '100%',
 }));
 
 // SubHeader Typography Two style (H3)
 
 export const SubHeaderTypographyTwo = styled(Typography)(({ theme }) => ({
   fontSize: '2rem',
+  fontWeight: 'bold',
   textAlign: 'center',
   paddingBottom: '1px',
   marginBottom: theme.spacing(1),
@@ -141,7 +132,7 @@ export const SubHeaderTypographyTwo = styled(Typography)(({ theme }) => ({
   },
   color: theme.palette.mode === 'dark' ? '#ABB0B8' : '#CC9966',
   borderBottom: `1px solid ${theme.palette.mode === 'dark' ? 'white' : '#ABB0B8'}`,
-  maxWidth: '75%',
+  maxWidth: '100%',
 }));
 
 // Paragraph Typography styles
@@ -150,7 +141,7 @@ export const SubHeaderTypographyTwo = styled(Typography)(({ theme }) => ({
 export const ParagraphTypography = styled(Typography)(({ theme }) => ({
   textAlign: 'justify',
   marginBottom: theme.spacing(2),
-  maxWidth: '75%',
+  maxWidth: '100%',
 }));
 
 // Backgrounded Paragraph Typography style
@@ -161,7 +152,7 @@ export const BackgroundedParagraphTypography = styled(Typography)(({ theme }) =>
   padding: theme.spacing(1),
   backgroundColor: theme.palette.mode === 'dark' ? '#ABB0B8' : 'white',
   color: theme.palette.mode === 'dark' ? 'black' : 'black',
-  maxWidth: '75%',
+  maxWidth: '100%',
 }));
 
 // Left Justified and Backgrounded Paragraph Typography style
@@ -173,13 +164,13 @@ export const LeftJustifiedBackgroundedParagraphTypography = styled(Typography)((
   backgroundColor: theme.palette.mode === 'dark' ? '#ABB0B8' : 'white',
   color: theme.palette.mode === 'dark' ? 'black' : 'black',
   textAlign: 'left',
-  maxWidth: '75%',
+  maxWidth: '100%',
 }));
 
 export const CenteredParagraphTypography = styled(Typography)(({ theme }) => ({
   textAlign: 'center',
   marginBottom: theme.spacing(2),
-  maxWidth: '75%',
+  maxWidth: '100%',
 }));
 
 // Link style
@@ -194,14 +185,13 @@ export const StyledLink = styled(Link)(({ theme }) => ({
   '&:hover': {
     color: theme.palette.mode === 'dark' ? '#00ff8c' : '#ffcb00',
   },
-  maxWidth: '75%',
+  maxWidth: '100%',
 }));
 
 // Button styleSheets
 
 // Styled Button style
 export const StyledButton = styled(Button)(({ theme }) => ({
-  margin: theme.spacing(1),
   color: theme.palette.mode === 'dark' ? '#ABB0B8' : 'black',
   backgroundColor: theme.palette.mode === 'dark' ? 'blue' : '#ABB0B8',
   border: `1px solid ${theme.palette.mode === 'dark' ? '#ABB0B8' : '#ABB0B8'}`,
@@ -212,46 +202,47 @@ export const StyledButton = styled(Button)(({ theme }) => ({
   transition: theme.transitions.create(['background-color', 'color', 'border'], {
     duration: theme.transitions.duration.short,
   }),
-  maxWidth: '75%',
+  maxWidth: '100%',
   [theme.breakpoints.down('sm')]: {
     margin: theme.spacing(0.5),
   },
+  padding: '6px',
 }));
 
 // Image and Image Container styles
 
 // Image Grid style
 export const ImageContainer = styled(Paper)(({ theme }) => ({
-  display: 'flex',
   textAlign: 'center',
   color: theme.palette.text.secondary,
+  padding: '4px',
 }));
 
 // Image style
 export const StyledImage = styled('img')(({ theme }) => ({
-  display: 'flex',
-  width: 'auto',
-  height: 'auto',
+  [theme.breakpoints.down('sm')]: {
+    width: '90%',
+  },
+  width: '10%',
   borderRadius: theme.shape.borderRadius,
   backgroundColor: theme.palette.background.paper,
 }));
 
 // Large Image style
 export const LargeStyledImage = styled('img')(({ theme }) => ({
-  display: 'flex',
-  width: 'auto',
-  height: 'auto',
+[theme.breakpoints.down('sm')]: {
+    width: '90%',
+  },
+  width: '50%',
+  padding: '4px',
   maxWidth: '100%',
-  maxHeight: '100%',
   textAlign: 'center',
   borderRadius: theme.shape.borderRadius,
   backgroundColor: theme.palette.background.paper,
   boxShadow: theme.palette.mode === 'dark' ? theme.shadows[10] : theme.shadows[8],
   border: `4px solid ${theme.palette.mode === 'dark' ? theme.palette.primary.light : 'black'}`,
-  maxWidth: '100%',
   margin: '0 auto',
   textAlign: 'center',
-  display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
 }));
@@ -260,7 +251,6 @@ export const LargeStyledImage = styled('img')(({ theme }) => ({
 
 // Styled List
 export const StyledList = styled(List)(({ theme }) => ({
-  display: 'flex',
   backgroundColor: theme.palette.mode === 'dark' ? '#949494' : 'white',
   borderRadius: theme.shape.borderRadius,
   boxShadow: theme.shadows[4],
@@ -271,7 +261,6 @@ export const StyledList = styled(List)(({ theme }) => ({
 
 // Styled List Item
 export const StyledListItem = styled(ListItem)(({ theme }) => ({
-  display: 'flex',
   border: `2px solid ${theme.palette.mode === 'dark' ? '#ABB0B8' : 'black'}`,
   backgroundColor: theme.palette.mode === 'dark' ? '#ABB0B8' : '#ABB0B8',
   borderRadius: theme.shape.borderRadius,
@@ -281,7 +270,6 @@ export const StyledListItem = styled(ListItem)(({ theme }) => ({
 
 // Centered Styled List Item
 export const CenteredStyledListItem = styled(ListItem)(({ theme }) => ({
-  display: 'flex',
   border: `4px solid ${theme.palette.mode === 'dark' ? '#ABB0B8' : '#ABB0B8'}`,
   fontcolor: '#ABB0B8',
   backgroundColor: theme.palette.mode === 'dark' ? '#ABB0B8' : '#ABB0B8',
@@ -294,7 +282,6 @@ export const CenteredStyledListItem = styled(ListItem)(({ theme }) => ({
 
 // Styled List Item Text
 export const StyledListItemText = styled(ListItemText)(({ theme }) => ({
-  display: 'flex',
   color: theme.palette.mode === 'dark' ? '#949494' : theme.palette.background.default,
   '& .MuiListItemText-primary': {
     fontWeight: 600,

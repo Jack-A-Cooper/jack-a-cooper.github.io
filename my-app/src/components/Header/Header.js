@@ -8,6 +8,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import IconButton from '@mui/material/IconButton';
 import Brightness7Icon from '@mui/icons-material/Brightness7'; // Light mode icon
 import Brightness4Icon from '@mui/icons-material/Brightness4'; // Dark mode icon
+import Settings from '../Settings';
 import {
   StyledAppBar,
   StyledToolbar,
@@ -72,11 +73,11 @@ function Header({ toggleDarkMode, isDarkMode }) {
           <ListItem button>
             <ListItemText primary="Contact" />
           </ListItem>
-          <StyledButton onClick={colorMode.toggleColorMode} color="inherit" sx={{ marginLeft: 'auto' }}>
-                {isDarkMode ? <Brightness7Icon /> : <Brightness4Icon />}
-          </StyledButton>
         </StyledNavLinkBar>
       </List>
+      <StyledButton onClick={colorMode.toggleColorMode} color="inherit" sx={{ marginLeft: 'auto' }}>
+          {isDarkMode ? <Brightness7Icon /> : <Brightness4Icon />}
+      </StyledButton>
     </StyledDrawerContent>
   );
 
