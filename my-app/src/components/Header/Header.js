@@ -8,7 +8,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 import IconButton from '@mui/material/IconButton';
 import Brightness7Icon from '@mui/icons-material/Brightness7'; // Light mode icon
 import Brightness4Icon from '@mui/icons-material/Brightness4'; // Dark mode icon
-import Settings from '../Settings';
 import {
   StyledAppBar,
   StyledToolbar,
@@ -114,7 +113,6 @@ function Header({ toggleDarkMode, isDarkMode }) {
                 {isDarkMode ? <Brightness7Icon /> : <Brightness4Icon />}
             </StyledButton>
           </StyledNavButtons>
-          <Settings></Settings>
           <StyledMenuButton
             color="inherit"
             aria-label="open drawer"
