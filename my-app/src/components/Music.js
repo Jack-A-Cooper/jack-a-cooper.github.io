@@ -27,8 +27,12 @@ const Music = () => {
   return (
     <Box sx={MusicPageStyles}>
       <SectionContainerBox>
-        <HeaderTypography>Music (Spuqk)</HeaderTypography>
-        <SubHeaderTypographyTwo>Track List (unreleased):</SubHeaderTypographyTwo>
+        <ContainerBox>
+          <HeaderTypography>Music (Spuqk)</HeaderTypography>
+        </ContainerBox>
+        <ContainerBox>
+          <SubHeaderTypographyTwo>Track List (unreleased):</SubHeaderTypographyTwo>
+        </ContainerBox>
         <ContainerBox>
           <StyledList>
             {/* We */}

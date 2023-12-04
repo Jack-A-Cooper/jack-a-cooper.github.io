@@ -19,8 +19,12 @@ const Home = () => {
   return (
     <Box sx={HomePageStyles}>
         <SectionContainerBox>
-            <HeaderTypography>Home Page</HeaderTypography>
-            <StyledImage src={p1} alt=" " />
+            <ContainerBox>
+                <HeaderTypography>Home Page</HeaderTypography>
+            </ContainerBox>
+            <ContainerBox>
+                <StyledImage src={p1} alt=" " />
+            </ContainerBox>
             <ContainerBox>
                 <SubHeaderTypography>Summary</SubHeaderTypography>
             </ContainerBox>

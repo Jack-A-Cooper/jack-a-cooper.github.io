@@ -45,6 +45,10 @@ export const StyledMenuButton = styled(IconButton)(({ theme }) => ({
   border: `1px solid ${theme.palette.mode === 'dark' ? 'white' : 'black'}`,
   backgroundColor: theme.palette.mode === 'dark' ? 'white' : 'black',
   color: theme.palette.mode === 'dark' ? 'black' : 'white',
+  '&:hover': {
+       background: theme.palette.mode === 'dark' ? 'black' : 'white',
+       color: theme.palette.mode === 'dark' ? 'white' : 'black',
+    },
 }));
 
 export const StyledNavButtons = styled(Box)(({ theme }) => ({
@@ -77,6 +81,7 @@ export const StyledNavLinkBar = styled(({ isActive, ...otherProps }) => <RouterL
     backgroundColor: isActive ? theme.palette.action.selected : 'transparent',
   },
   '&:hover': {
+       
        background: 'white',
        color: 'black',
     },

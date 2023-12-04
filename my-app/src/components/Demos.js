@@ -21,7 +21,9 @@ const Demos = () => {
   return (
     <Box sx={DemosPageStyles}>
       <SectionContainerBox>
+      <ContainerBox>
         <HeaderTypography>Project Demos</HeaderTypography>
+      </ContainerBox>
         <ContainerBox>
           <BackgroundedParagraphTypography>Coming soon... Will hopefully have some (preferably) hands-on demos or visual treats to play around with that I've worked on! Might also provide demos in video format with narration if the context requires it.</BackgroundedParagraphTypography>
           <BackgroundedParagraphTypography>In the meantime, feel free to check out these diagrams I created. The first is my take on streamlining the Best Buy home theater department workflow and converting it to a cpu flowchart! (I was terribly bored).</BackgroundedParagraphTypography>

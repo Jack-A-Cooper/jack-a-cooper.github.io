@@ -27,7 +27,9 @@ const Projects = () => {
   return (
     <Box sx={ProjectsPageStyles}>
       <SectionContainerBox>
-        <HeaderTypography>Projects</HeaderTypography>
+      <ContainerBox>
+            <HeaderTypography>Projects</HeaderTypography>
+      </ContainerBox>
         <ContainerBox>
           <SubHeaderTypography>In Progress</SubHeaderTypography>
               <ContainerBox>

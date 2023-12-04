@@ -70,6 +70,7 @@ export const HeaderTypography = styled(Typography)(({ theme }) => ({
   fontSize: '6rem',
   fontWeight: 'bold',
   textAlign: 'center',
+  display: 'inline-block',
   textTransform: 'uppercase',
   letterSpacing: '12px',
   paddingBottom: theme.spacing(2),

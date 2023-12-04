@@ -27,7 +27,9 @@ const Contact = () => {
   return (
     <Box sx={ContactPageStyles}>
       <SectionContainerBox>
-        <HeaderTypography>Contact Me</HeaderTypography>
+        <ContainerBox>
+            <HeaderTypography>Contact Me</HeaderTypography>
+        </ContainerBox>
         <CenterContainerBox>
           <BackgroundedParagraphTypography>I'd love to hear from you! Whether you have a question, a project idea, or just want to say hello, feel free to reach out.</BackgroundedParagraphTypography>
         </CenterContainerBox>

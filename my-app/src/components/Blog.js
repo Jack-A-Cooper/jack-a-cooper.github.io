@@ -27,9 +27,13 @@ const Blog = () => {
   return (
     <Box sx={BlogPageStyles}>
       <SectionContainerBox>
+      <ContainerBox>
          <HeaderTypography>Personal Blog</HeaderTypography>
+      </ContainerBox>
+      <ContainerBox>
         <BackgroundedParagraphTypography>Coming soon... Will need to allocate a lot of time to even just figure out the style of blog I'd enjoy let alone get writting one... (sigh) someday.</BackgroundedParagraphTypography>
-      </SectionContainerBox>
+      </ContainerBox>
+     </SectionContainerBox>
     </Box>
   );
 }
