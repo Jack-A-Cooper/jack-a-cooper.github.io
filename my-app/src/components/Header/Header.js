@@ -114,6 +114,7 @@ function Header({ toggleDarkMode, isDarkMode }) {
                 {isDarkMode ? <Brightness7Icon /> : <Brightness4Icon />}
             </StyledButton>
           </StyledNavButtons>
+          <Settings></Settings>
           <StyledMenuButton
             color="inherit"
             aria-label="open drawer"
