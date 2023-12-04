@@ -60,13 +60,13 @@ export const AppTitleName = styled(Typography)(({ theme }) => ({
   color: theme.palette.mode === 'dark' ? 'black' : theme.palette.primary.contrastText,
   textShadow: theme.palette.mode === 'dark' ? `1px 2px 1px black` : `1px 2px 1px black`,
   [theme.breakpoints.down('md')]: {
-    fontSize: '2.5rem',
-  },
-  [theme.breakpoints.down('sm')]: {
     fontSize: '2rem',
   },
-  [theme.breakpoints.down('xs')]: {
+  [theme.breakpoints.down('sm')]: {
     fontSize: '1.5rem',
+  },
+  [theme.breakpoints.down('xs')]: {
+    fontSize: '0.5rem',
   },
   fontColor: '#6F7378',
   borderBottom: `2px solid ${theme.palette.mode === 'dark' ? 'white' : 'black'}`,
