@@ -27,6 +27,7 @@ export const SectionContainerBox = styled(Box)(({ theme }) => ({
 
 // Container style
 export const ContainerBox = styled(Box)(({ theme }) => ({
+  display: 'flex',
   padding: theme.spacing(2),
   margin: '0 auto',
 }));
@@ -221,13 +222,15 @@ export const StyledButton = styled(Button)(({ theme }) => ({
 
 // Image Grid style
 export const ImageContainer = styled(Paper)(({ theme }) => ({
+  display: 'flex',
   textAlign: 'center',
   color: theme.palette.text.secondary,
 }));
 
 // Image style
 export const StyledImage = styled('img')(({ theme }) => ({
-  width: '100%',
+  display: 'flex',
+  width: 'auto',
   height: 'auto',
   borderRadius: theme.shape.borderRadius,
   backgroundColor: theme.palette.background.paper,
@@ -235,6 +238,7 @@ export const StyledImage = styled('img')(({ theme }) => ({
 
 // Large Image style
 export const LargeStyledImage = styled('img')(({ theme }) => ({
+  display: 'flex',
   width: 'auto',
   height: 'auto',
   maxWidth: '100%',
@@ -250,13 +254,13 @@ export const LargeStyledImage = styled('img')(({ theme }) => ({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  maxWidth: '50%',
 }));
 
 // List and List Item styles
 
 // Styled List
 export const StyledList = styled(List)(({ theme }) => ({
+  display: 'flex',
   backgroundColor: theme.palette.mode === 'dark' ? '#949494' : 'white',
   borderRadius: theme.shape.borderRadius,
   boxShadow: theme.shadows[4],
@@ -267,6 +271,7 @@ export const StyledList = styled(List)(({ theme }) => ({
 
 // Styled List Item
 export const StyledListItem = styled(ListItem)(({ theme }) => ({
+  display: 'flex',
   border: `2px solid ${theme.palette.mode === 'dark' ? '#ABB0B8' : 'black'}`,
   backgroundColor: theme.palette.mode === 'dark' ? '#ABB0B8' : '#ABB0B8',
   borderRadius: theme.shape.borderRadius,
@@ -276,6 +281,7 @@ export const StyledListItem = styled(ListItem)(({ theme }) => ({
 
 // Centered Styled List Item
 export const CenteredStyledListItem = styled(ListItem)(({ theme }) => ({
+  display: 'flex',
   border: `4px solid ${theme.palette.mode === 'dark' ? '#ABB0B8' : '#ABB0B8'}`,
   fontcolor: '#ABB0B8',
   backgroundColor: theme.palette.mode === 'dark' ? '#ABB0B8' : '#ABB0B8',
@@ -288,11 +294,12 @@ export const CenteredStyledListItem = styled(ListItem)(({ theme }) => ({
 
 // Styled List Item Text
 export const StyledListItemText = styled(ListItemText)(({ theme }) => ({
+  display: 'flex',
   color: theme.palette.mode === 'dark' ? '#949494' : theme.palette.background.default,
   '& .MuiListItemText-primary': {
     fontWeight: 600,
   },
-  maxWidth: '85%',
+  maxWidth: '100%',
 }));
 
 // Specific page styles
