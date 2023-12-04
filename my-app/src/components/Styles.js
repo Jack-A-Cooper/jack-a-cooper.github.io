@@ -117,7 +117,7 @@ export const SubHeaderTypography = styled(Typography)(({ theme }) => ({
   paddingBottom: '2px',
   marginBottom: theme.spacing(1),
   display: 'inline-block',
-  color: theme.palette.mode === 'dark' ? theme.palette.primary.light : '#ABB0B8',
+  color: theme.palette.mode === 'dark' ? theme.palette.primary.light : '#5D4C54',
   borderBottom: `2px solid ${theme.palette.mode === 'dark' ? '#6F7378' : 'black'}`,
   textShadow: theme.palette.mode === 'dark' ? `2px 2px 0px ${theme.palette.grey[600]}` : `2px 2px 0px ${theme.palette.grey[150]}`,
   maxWidth: '75%',
@@ -131,7 +131,7 @@ export const SubHeaderTypographyTwo = styled(Typography)(({ theme }) => ({
   paddingBottom: '1px',
   marginBottom: theme.spacing(1),
   display: 'inline-block',
-  color: theme.palette.mode === 'dark' ? '#ABB0B8' : '#E6EEF7',
+  color: theme.palette.mode === 'dark' ? '#ABB0B8' : '#CC9966',
   borderBottom: `1px solid ${theme.palette.mode === 'dark' ? 'white' : '#ABB0B8'}`,
   maxWidth: '75%',
 }));
