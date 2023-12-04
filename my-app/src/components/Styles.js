@@ -88,7 +88,7 @@ export const AppTitleName = styled(Typography)(({ theme }) => ({
   [theme.breakpoints.down('xs')]: {
     fontSize: '1rem',
   },
-  fontColor: '#8b00ff',
+  fontColor: '#6F7378',
   borderBottom: `2px solid ${theme.palette.mode === 'dark' ? 'white' : 'black'}`,
   maxWidth: '100%',
 }));
@@ -118,7 +118,7 @@ export const SubHeaderTypography = styled(Typography)(({ theme }) => ({
   marginBottom: theme.spacing(1),
   display: 'inline-block',
   color: theme.palette.mode === 'dark' ? theme.palette.primary.light : '#ABB0B8',
-  borderBottom: `2px solid ${theme.palette.mode === 'dark' ? '#FC440F' : 'black'}`,
+  borderBottom: `2px solid ${theme.palette.mode === 'dark' ? '#6F7378' : 'black'}`,
   textShadow: theme.palette.mode === 'dark' ? `2px 2px 0px ${theme.palette.grey[600]}` : `2px 2px 0px ${theme.palette.grey[150]}`,
   maxWidth: '75%',
 }));
@@ -193,10 +193,10 @@ export const StyledButton = styled(Button)(({ theme }) => ({
   margin: theme.spacing(1),
   color: theme.palette.mode === 'dark' ? '#ABB0B8' : 'black',
   backgroundColor: theme.palette.mode === 'dark' ? 'gold' : '#ABB0B8',
-  border: `1px solid ${theme.palette.mode === 'dark' ? '#ffcb00' : '#ABB0B8'}`,
+  border: `1px solid ${theme.palette.mode === 'dark' ? '#ABB0B8' : '#ABB0B8'}`,
   '&:hover': {
     backgroundColor: theme.palette.mode === 'dark' ? 'white' : 'black',
-    color: theme.palette.mode === 'dark' ? 'blue' : '#FC440F',
+    color: theme.palette.mode === 'dark' ? 'blue' : '#6F7378',
   },
   transition: theme.transitions.create(['background-color', 'color', 'border'], {
     duration: theme.transitions.duration.short,
@@ -223,7 +223,7 @@ export const StyledImage = styled('img')(({ theme }) => ({
   borderRadius: theme.shape.borderRadius,
   backgroundColor: theme.palette.background.paper,
   boxShadow: theme.palette.mode === 'dark' ? theme.shadows[10] : theme.shadows[8],
-  border: `4px solid ${theme.palette.mode === 'dark' ? '#ffcb00' : 'black'}`,
+  border: `4px solid ${theme.palette.mode === 'dark' ? '#ABB0B8' : 'black'}`,
   maxWidth: '20%',
 }));
 
@@ -262,7 +262,7 @@ export const StyledList = styled(List)(({ theme }) => ({
 // Styled List Item
 export const StyledListItem = styled(ListItem)(({ theme }) => ({
   border: `2px solid ${theme.palette.mode === 'dark' ? '#ABB0B8' : 'black'}`,
-  backgroundColor: theme.palette.mode === 'dark' ? '#ff00f2' : '#ABB0B8',
+  backgroundColor: theme.palette.mode === 'dark' ? '#ABB0B8' : '#ABB0B8',
   borderRadius: theme.shape.borderRadius,
   margin: theme.spacing(1, 0),
   maxWidth: '100%',
@@ -270,9 +270,9 @@ export const StyledListItem = styled(ListItem)(({ theme }) => ({
 
 // Centered Styled List Item
 export const CenteredStyledListItem = styled(ListItem)(({ theme }) => ({
-  border: `4px solid ${theme.palette.mode === 'dark' ? '#ABB0B8' : '#ffcb00'}`,
-  fontcolor: '#ffcb00',
-  backgroundColor: theme.palette.mode === 'dark' ? '#ffcb00' : '#ABB0B8',
+  border: `4px solid ${theme.palette.mode === 'dark' ? '#ABB0B8' : '#ABB0B8'}`,
+  fontcolor: '#ABB0B8',
+  backgroundColor: theme.palette.mode === 'dark' ? '#ABB0B8' : '#ABB0B8',
   borderRadius: theme.shape.borderRadius,
   margin: theme.spacing(1, 0),
   alignItems: 'center',

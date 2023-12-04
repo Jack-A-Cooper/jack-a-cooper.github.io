@@ -8,7 +8,7 @@ import Button from '@mui/material/Button';
 import { Link as RouterLink } from 'react-router-dom';
 
 export const StyledAppBar = styled(AppBar)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? '#FC440F' : theme.palette.primary.main,
+  backgroundColor: theme.palette.mode === 'dark' ? '#B8A598' : theme.palette.primary.main,
   padding: theme.spacing(1),
   zIndex: theme.zIndex.drawer + 1,
   position: "fixed",
@@ -16,7 +16,7 @@ export const StyledAppBar = styled(AppBar)(({ theme }) => ({
     easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.leavingScreen,
   }),
-  color: theme.palette.getContrastText(theme.palette.mode === 'dark' ? '#FC440F' : theme.palette.primary.main),
+  color: theme.palette.getContrastText(theme.palette.mode === 'dark' ? '#B8A598' : theme.palette.primary.main),
 }));
 
 export const StyledToolbar = styled(Toolbar)(({ theme }) => ({
@@ -81,13 +81,13 @@ export const StyledNavLinkBar = styled(({ isActive, ...otherProps }) => <RouterL
 }));
 
 export const StyledNavLink = styled(Button)(({ theme, isActive }) => ({
-  color: isActive ? '#FC440F' : 'black',
+  color: isActive ? '#B8A598' : 'black',
   background: isActive ? 'black' : 'none',
   '& .MuiListItem-root': {
-    backgroundColor: isActive ? '#FC440F' : 'black',
+    backgroundColor: isActive ? '#B8A598' : 'black',
   },
   '&:hover': {
        background: 'black',
-       color: '#FC440F',
+       color: '#B8A598',
     },
 }));
