@@ -1,6 +1,6 @@
 // Home.js
 import React from 'react';
-import { front } from '../images/me';
+import { p1 } from '../images/me';
 import { professionalResume, generalResume } from '../resources/resumes';
 import Box from '@mui/material/Box';
 import { 
@@ -20,7 +20,7 @@ const Home = () => {
     <Box sx={HomePageStyles}>
         <SectionContainerBox>
             <HeaderTypography>Home Page</HeaderTypography>
-            <StyledImage src={front} alt=" " />
+            <StyledImage src={p1} alt=" " />
             <ContainerBox>
                 <SubHeaderTypography>Summary</SubHeaderTypography>
             </ContainerBox>

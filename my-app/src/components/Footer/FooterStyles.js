@@ -11,7 +11,7 @@ export const StyledFooter = styled(Box)(({ theme }) => ({
   textAlign: 'center',
   justifyContent: 'center',
   alignItems: 'center',
-  backgroundColor: theme.palette.mode === 'dark' ? '#FC440F' : theme.palette.primary.main,
+  backgroundColor: theme.palette.mode === 'dark' ? '#ABB0B8' : theme.palette.primary.main,
   color: theme.palette.mode === 'dark' ? theme.palette.getContrastText('#fff') : theme.palette.getContrastText('#008080'),
   boxShadow: theme.palette.mode === 'dark' ? '0px -2px 4px rgba(0, 0, 0, 0.25)' : 'none',
 }));

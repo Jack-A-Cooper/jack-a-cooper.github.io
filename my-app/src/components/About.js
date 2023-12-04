@@ -1,6 +1,6 @@
 // About.js
 import React from 'react';
-import { p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12 } from '../images/me';
+import { p1, p2, p3 } from '../images/me';
 import Box from '@mui/material/Box';
 import { 
     ContainerBox,
@@ -35,15 +35,6 @@ const About = () => {
             <StyledImage src={p1} alt=" "/>
             <StyledImage src={p2} alt=" "/>
             <StyledImage src={p3} alt=" "/>
-            <StyledImage src={p4} alt=" "/>
-            <StyledImage src={p5} alt=" "/>
-            <StyledImage src={p6} alt=" "/>
-            <StyledImage src={p7} alt=" "/>
-            <StyledImage src={p8} alt=" "/>
-            <StyledImage src={p9} alt=" "/>
-            <StyledImage src={p10} alt=" "/>
-            <StyledImage src={p11} alt=" "/>
-            <StyledImage src={p12} alt=" "/>
           </ImageContainer>
         </CenterContainerBox>
       </SectionContainerBox>
