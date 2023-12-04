@@ -42,7 +42,8 @@ export const StyledMenuButton = styled(IconButton)(({ theme }) => ({
   left: theme.spacing(2),
   top: theme.spacing(1),
   border: `1px solid ${theme.palette.mode === 'dark' ? 'white' : 'black'}`,
-  backgroundColor: 'black',
+  backgroundColor: theme.palette.mode === 'dark' ? 'white' : 'black',
+  color: theme.palette.mode === 'dark' ? 'black' : 'white',
 }));
 
 export const StyledNavButtons = styled(Box)(({ theme }) => ({

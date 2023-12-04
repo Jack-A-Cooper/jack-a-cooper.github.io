@@ -8,34 +8,19 @@ import { List, ListItem, ListItemText } from '@mui/material';
 
 // Theme styles (for ease of reference)
 
-// Primary - Blue
-export const themeColorPrimary = (({ theme }) => ({
-  color: theme.palette.primary.main,
-}));
-
-// Secondary - Purple
-export const themeColorSecondary = (({ theme }) => ({
-  color: theme.palette.secondary.main,
-}));
-
-// Contrast - White
-export const themeColorContrast = (({ theme }) => ({
-  color: theme.palette.primary.contrastText,
-}));
-
-// Dark Primary - Deep Orange
-export const themeColorDarkPrimary = (({ theme }) => ({
-  color: '#ABB0B8',
-}));
-
 // Section styles
 
 // Section Container style
 export const SectionContainerBox = styled(Box)(({ theme }) => ({
   padding: theme.spacing(12),
-  maxWidth: '1200px',
   margin: '0 auto',
-  maxWidth: '100%',
+  margintop: '120px',
+  [theme.breakpoints.down('md')]: {
+    padding: theme.spacing(8),
+  },
+  [theme.breakpoints.down('sm')]: {
+    padding: theme.spacing(4),
+  },
 }));
 
 // Container styles
@@ -43,16 +28,11 @@ export const SectionContainerBox = styled(Box)(({ theme }) => ({
 // Container style
 export const ContainerBox = styled(Box)(({ theme }) => ({
   padding: theme.spacing(2),
-  maxWidth: '1200px',
   margin: '0 auto',
-  maxWidth: '100%',
 }));
 
 // Center Container style
 export const CenterContainerBox = styled(Box)(({ theme }) => ({
-  padding: theme.spacing(2),
-  maxWidth: '100%',
-  margin: '0 auto',
   textAlign: 'center',
   display: 'flex',
   alignItems: 'center',
@@ -61,9 +41,6 @@ export const CenterContainerBox = styled(Box)(({ theme }) => ({
 
 // Left Container style
 export const LeftJustifiedContainerBox = styled(Box)(({ theme }) => ({
-  padding: theme.spacing(2),
-  maxWidth: '100%',
-  margin: '0 auto',
   textAlign: 'left',
   display: 'flex',
   alignItems: 'left',
@@ -82,11 +59,14 @@ export const AppTitleName = styled(Typography)(({ theme }) => ({
   fontFamily: '"Montserrat", sans-serif',
   color: theme.palette.mode === 'dark' ? 'black' : theme.palette.primary.contrastText,
   textShadow: theme.palette.mode === 'dark' ? `1px 2px 1px black` : `1px 2px 1px black`,
+  [theme.breakpoints.down('md')]: {
+    fontSize: '2.5rem',
+  },
   [theme.breakpoints.down('sm')]: {
     fontSize: '2rem',
   },
   [theme.breakpoints.down('xs')]: {
-    fontSize: '1rem',
+    fontSize: '1.5rem',
   },
   fontColor: '#6F7378',
   borderBottom: `2px solid ${theme.palette.mode === 'dark' ? 'white' : 'black'}`,
@@ -102,6 +82,15 @@ export const HeaderTypography = styled(Typography)(({ theme }) => ({
   textAlign: 'center',
   textTransform: 'uppercase',
   letterSpacing: '12px',
+  [theme.breakpoints.down('md')]: {
+    fontSize: '6rem',
+  },
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '3rem',
+  },
+  [theme.breakpoints.down('xs')]: {
+    fontSize: '1.5rem',
+  },
   marginBottom: theme.spacing(2),
   borderBottom: `2px solid ${theme.palette.mode === 'dark' ? '#ABB0B8' : 'black'}`,
   fontFamily: '"Montserrat", sans-serif',
@@ -117,6 +106,15 @@ export const SubHeaderTypography = styled(Typography)(({ theme }) => ({
   paddingBottom: '2px',
   marginBottom: theme.spacing(1),
   display: 'inline-block',
+  [theme.breakpoints.down('md')]: {
+    fontSize: '4rem',
+  },
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '2rem',
+  },
+  [theme.breakpoints.down('xs')]: {
+    fontSize: '1rem',
+  },
   color: theme.palette.mode === 'dark' ? theme.palette.primary.light : '#5D4C54',
   borderBottom: `2px solid ${theme.palette.mode === 'dark' ? '#6F7378' : 'black'}`,
   textShadow: theme.palette.mode === 'dark' ? `2px 2px 0px ${theme.palette.grey[600]}` : `2px 2px 0px ${theme.palette.grey[150]}`,
@@ -131,6 +129,15 @@ export const SubHeaderTypographyTwo = styled(Typography)(({ theme }) => ({
   paddingBottom: '1px',
   marginBottom: theme.spacing(1),
   display: 'inline-block',
+  [theme.breakpoints.down('md')]: {
+    fontSize: '2rem',
+  },
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '1rem',
+  },
+  [theme.breakpoints.down('xs')]: {
+    fontSize: '0.5rem',
+  },
   color: theme.palette.mode === 'dark' ? '#ABB0B8' : '#CC9966',
   borderBottom: `1px solid ${theme.palette.mode === 'dark' ? 'white' : '#ABB0B8'}`,
   maxWidth: '75%',
@@ -180,6 +187,9 @@ export const StyledLink = styled(Link)(({ theme }) => ({
   fontSize: '1rem',
   padding: theme.spacing(1),
   fontWeight: 'bold',
+  [theme.breakpoints.down('sm')]: {
+    padding: theme.spacing(1.5),
+  },
   '&:hover': {
     color: theme.palette.mode === 'dark' ? '#00ff8c' : '#ffcb00',
   },
@@ -202,29 +212,25 @@ export const StyledButton = styled(Button)(({ theme }) => ({
     duration: theme.transitions.duration.short,
   }),
   maxWidth: '75%',
+  [theme.breakpoints.down('sm')]: {
+    margin: theme.spacing(0.5),
+  },
 }));
 
 // Image and Image Container styles
 
 // Image Grid style
 export const ImageContainer = styled(Paper)(({ theme }) => ({
-  padding: theme.spacing(1),
   textAlign: 'center',
   color: theme.palette.text.secondary,
-  maxWidth: '75%',
 }));
 
 // Image style
 export const StyledImage = styled('img')(({ theme }) => ({
-  width: 'auto',
+  width: '100%',
   height: 'auto',
-  maxWidth: '50%',
-  maxHeight: '100%',
   borderRadius: theme.shape.borderRadius,
   backgroundColor: theme.palette.background.paper,
-  boxShadow: theme.palette.mode === 'dark' ? theme.shadows[10] : theme.shadows[8],
-  border: `4px solid ${theme.palette.mode === 'dark' ? '#ABB0B8' : 'black'}`,
-  maxWidth: '20%',
 }));
 
 // Large Image style
@@ -251,7 +257,7 @@ export const LargeStyledImage = styled('img')(({ theme }) => ({
 
 // Styled List
 export const StyledList = styled(List)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? theme.palette.background.paper : 'white',
+  backgroundColor: theme.palette.mode === 'dark' ? '#949494' : 'white',
   borderRadius: theme.shape.borderRadius,
   boxShadow: theme.shadows[4],
   padding: theme.spacing(2),
@@ -282,7 +288,7 @@ export const CenteredStyledListItem = styled(ListItem)(({ theme }) => ({
 
 // Styled List Item Text
 export const StyledListItemText = styled(ListItemText)(({ theme }) => ({
-  color: theme.palette.mode === 'dark' ? theme.palette.background.paper : theme.palette.background.default,
+  color: theme.palette.mode === 'dark' ? '#949494' : theme.palette.background.default,
   '& .MuiListItemText-primary': {
     fontWeight: 600,
   },
