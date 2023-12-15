@@ -31,7 +31,7 @@ const Blog = () => {
          <HeaderTypography>Personal Blog</HeaderTypography>
       </ContainerBox>
       <ContainerBox>
-        <BackgroundedParagraphTypography>Coming soon... Will need to allocate a lot of time to even just figure out the style of blog I'd enjoy let alone get writting one... (sigh) someday.</BackgroundedParagraphTypography>
+        <BackgroundedParagraphTypography>Coming soon...</BackgroundedParagraphTypography>
       </ContainerBox>
      </SectionContainerBox>
     </Box>
