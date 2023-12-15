@@ -37,8 +37,8 @@ const Contact = () => {
         <ContainerBox>
           <StyledList>
             <CenteredStyledListItem>Email: <a href="mailto:Jack_cooper01@yahoo.com">Jack_cooper01@yahoo.com</a></CenteredStyledListItem>
-            <CenteredStyledListItem>LinkedIn: <a href="https://www.linkedin.com/in/jackcoop" rel="noreferrer" target="_blank">Your LinkedIn</a></CenteredStyledListItem>
-            <CenteredStyledListItem>GitHub: <a href="https://github.com/Jack-A-Cooper" rel="noreferrer" target="_blank">Your GitHub</a></CenteredStyledListItem>
+            <CenteredStyledListItem>LinkedIn: <a href="https://www.linkedin.com/in/jackcoop" rel="noreferrer" target="_blank">LinkedIn</a></CenteredStyledListItem>
+            <CenteredStyledListItem>GitHub: <a href="https://github.com/Jack-A-Cooper" rel="noreferrer" target="_blank">Github</a></CenteredStyledListItem>
           </StyledList>
         </ContainerBox>
         <SubHeaderTypography>Connect With Me!</SubHeaderTypography>
