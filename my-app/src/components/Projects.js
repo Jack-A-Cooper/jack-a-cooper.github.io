@@ -56,7 +56,7 @@ const Projects = () => {
                       Conducting research into developing nuanced game design techniques, mechanics, and overall design.
                       </LeftJustifiedBackgroundedParagraphTypography>
                     <CenteredStyledListItem>Worldbuilding Project (Early Original Work) | Various</CenteredStyledListItem>
-                      <LeftJustifiedBackgroundedParagraphTypography>Worldbuilding project I am working on with the collaboration with my best friend. Still too early to reveal too much, but utilizing current tools and technologies to help flesh out the world and bring it to life on paper and through AI image generatoin. Of course this is
+                      <LeftJustifiedBackgroundedParagraphTypography>Worldbuilding project I am working on with the collaboration with my best friend. Still too early to reveal too much, but utilizing current tools and technologies to help flesh out the world and bring it to life on paper and through AI image generation. Of course this is
                       in tandem with good ol' drafting, testing, and tons of necessary brainstorming!
                       </LeftJustifiedBackgroundedParagraphTypography>
                 </StyledList>
