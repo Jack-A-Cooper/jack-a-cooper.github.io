@@ -37,20 +37,17 @@ const Projects = () => {
                 <StyledList><SubHeaderTypographyTwo>Programming Projects</SubHeaderTypographyTwo>
                     <CenteredStyledListItem><StyledLink href="https://github.com/Jack-A-Cooper/PyImgScale" rel="noreferrer" target="_blank">PyImgScale</StyledLink> | Python</CenteredStyledListItem>
                       <LeftJustifiedBackgroundedParagraphTypography>
-                        PyImgScale is a local GUI image processing application built on PyQt5 and Pillow. 
-                        <br>It facilitates the upscaling, downscaling, and converting of images between a few common image formats.</br>
-                        <br>PyImgScale provides a user-friendly interface to navigate through the filesystem, select images for processing, and manage processing queues.</br>
-                        <br>It will make use of multithreading to process images as efficiently as possible over traditional singlethreaded programs.</br>
-                        <br>Features:</br>
-                        <ul>
-                            <li>**Filesystem Navigation**: Browse through your file system within the app to locate images. Customizable with the ability to change the working directory at any time. Default is set to the directory where the script resides.</li>
-                            <li>**Image Processing**: Upscale or downscale images with selectable scale factors. Currently allows for 1.5x, 2x, 4x, and 8x upscaling/downscaling. Multithreaded implementation promotes speed and efficiency.</li>
-                            <li>**Format Conversion**: Convert images between popular formats: PNG, JPG, BMP, TGA, and PDF.</li>
-                            <li>**Batch Processing**: Process multiple images at once, with progress tracking via a progress bar. Configure settings for single file, batch, or directory processing configurations.</li>
-                            <li>**Preview Thumbnails**: View thumbnails of the selected images after processing. See at a glance what files you have processed.</li>
-                            <li>**Customizable Save Directory**: Choose the directory where processed images will be saved. Whenever necessary, configure where you wish to save your processsed images.</li>
-                        </ul>
-                      </LeftJustifiedBackgroundedParagraphTypography>
+                            PyImgScale is a local GUI image processing application built on PyQt5 and Pillow. It facilitates the upscaling, downscaling, and converting of images between a few common image formats. PyImgScale provides a user-friendly interface to navigate through the filesystem, select images for processing, and manage processing queues. It will make use of multithreading to process images as efficiently as possible over traditional singlethreaded programs.
+                            <br />Features:
+                            <ul>
+                              <li><strong>Filesystem Navigation</strong>: Browse through your file system within the app to locate images. Customizable with the ability to change the working directory at any time. Default is set to the directory where the script resides.</li>
+                              <li><strong>Image Processing</strong>: Upscale or downscale images with selectable scale factors. Currently allows for 1.5x, 2x, 4x, and 8x upscaling/downscaling. Multithreaded implementation promotes speed and efficiency.</li>
+                              <li><strong>Format Conversion</strong>: Convert images between popular formats: PNG, JPG, BMP, TGA, and PDF.</li>
+                              <li><strong>Batch Processing</strong>: Process multiple images at once, with progress tracking via a progress bar. Configure settings for single file, batch, or directory processing configurations.</li>
+                              <li><strong>Preview Thumbnails</strong>: View thumbnails of the selected images after processing. See at a glance what files you have processed.</li>
+                              <li><strong>Customizable Save Directory</strong>: Choose the directory where processed images will be saved. Whenever necessary, configure where you wish to save your processed images.</li>
+                            </ul>
+                          </LeftJustifiedBackgroundedParagraphTypography>
                         <CenterContainerBox>
                             <ImageContainer>
                                 <StyledImage src={PyImgScale} alt=" "/>
