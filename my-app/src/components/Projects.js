@@ -1,6 +1,7 @@
 // Projects.js
 import React from 'react';
 import Box from '@mui/material/Box';
+import { PyImgScale } from '../images/projects';
 import { 
     ContainerBox,
     CenterContainerBox,
@@ -45,6 +46,11 @@ const Projects = () => {
                         - **Preview Thumbnails**: View thumbnails of the selected images after processing. See at a glance what files you have processed.
                         - **Customizable Save Directory**: Choose the directory where processed images will be saved. Whenever necessary, configure where you wish to save your processsed images.
                       </LeftJustifiedBackgroundedParagraphTypography>
+                        <CenterContainerBox>
+                            <ImageContainer>
+                                <StyledImage src={PyImgScale} alt=" "/>
+                            </ImageContainer>     
+                        </CenterContainerBox>
                     <CenteredStyledListItem><StyledLink href="https://github.com/Jack-A-Cooper/coa-generator" rel="noreferrer" target="_blank">Coat of Arms Generator (COA Gen)</StyledLink> | Python</CenteredStyledListItem>
                       <LeftJustifiedBackgroundedParagraphTypography>A tool to create personalized coats of arms with historical heraldic rules. Leveraging machine learning and neural networks trained to create highly detailed, unique, and correct coat of arms. Also incorporates handy scripts for project development
                       and organization.
