@@ -34,12 +34,16 @@ const Projects = () => {
           <SubHeaderTypography>In Progress</SubHeaderTypography>
               <ContainerBox>
                 <StyledList><SubHeaderTypographyTwo>Programming Projects</SubHeaderTypographyTwo>
-                    <CenteredStyledListItem><StyledLink href="https://github.com/Jack-A-Cooper/WonderLoom" rel="noreferrer" target="_blank">Wonderloom</StyledLink> | Python</CenteredStyledListItem>
-                      <LeftJustifiedBackgroundedParagraphTypography>WonderLoom is envisioned as a companion tool that helps inspire imagination and spark creativity. A core concern of world building is contextual continuity while playing with friends or an AI Language Model (such as ChatGPT), 
-                      and this concept stays central in development efforts. Through contemporary frameworks and tools, the project aims to tackle the issue of world tracking in text-based game management and play. One can only go so far with world 
-                      building and interacting before details become muddied and concret tracking falls by the wayside. Or worse, the imagined story teller never bothered to remember your inventory's contents. A core component of WonderLoom's goal 
-                      is to serve as this tool; to help facilitate world data capture with ease. By utilizing such means as an ORM database backed with PostgreSQL 
-                      and powered through Python, organizing and utilizing data will no longer be an arduous chore. Players, world-builders, dreamers, and dataphiles alike may take advantage of the tool to focus on the aspects they enjoy most.
+                    <CenteredStyledListItem><StyledLink href="https://github.com/Jack-A-Cooper/PyImgScale" rel="noreferrer" target="_blank">PyImgScale</StyledLink> | Python</CenteredStyledListItem>
+                      <LeftJustifiedBackgroundedParagraphTypography>PyImgScale is a local GUI image processing application built on PyQt5 and Pillow. It facilitates the upscaling, downscaling, and converting of images between a few common image formats.
+                        PyImgScale provides a user-friendly interface to navigate through the filesystem, select images for processing, and manage processing queues. It will make use of multithreading to process images as efficiently as possible over traditional singlethreaded programs.
+                          Features:
+                        - **Filesystem Navigation**: Browse through your file system within the app to locate images. Customizable with the ability to change the working directory at any time. Default is set to the directory where the script resides.
+                        - **Image Processing**: Upscale or downscale images with selectable scale factors. Currently allows for 1.5x, 2x, 4x, and 8x upscaling/downscaling. Multithreaded implementation promotes speed and efficiency.
+                        - **Format Conversion**: Convert images between popular formats: PNG, JPG, BMP, TGA, and PDF.
+                        - **Batch Processing**: Process multiple images at once, with progress tracking via a progress bar. Configure settings for single file, batch, or directory processing configurations.
+                        - **Preview Thumbnails**: View thumbnails of the selected images after processing. See at a glance what files you have processed.
+                        - **Customizable Save Directory**: Choose the directory where processed images will be saved. Whenever necessary, configure where you wish to save your processsed images.
                       </LeftJustifiedBackgroundedParagraphTypography>
                     <CenteredStyledListItem><StyledLink href="https://github.com/Jack-A-Cooper/coa-generator" rel="noreferrer" target="_blank">Coat of Arms Generator (COA Gen)</StyledLink> | Python</CenteredStyledListItem>
                       <LeftJustifiedBackgroundedParagraphTypography>A tool to create personalized coats of arms with historical heraldic rules. Leveraging machine learning and neural networks trained to create highly detailed, unique, and correct coat of arms. Also incorporates handy scripts for project development
