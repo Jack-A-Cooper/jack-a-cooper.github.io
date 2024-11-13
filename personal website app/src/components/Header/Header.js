@@ -81,14 +81,8 @@ function Header({ toggleDarkMode, isDarkMode }) {
             <StyledNavLink component={Link} to="/About" isActive={isActive('/About')}>
               About
             </StyledNavLink>
-            <StyledNavLink component={Link} to="/Demos" isActive={isActive('/Demos')}>
-              Demos
-            </StyledNavLink>
             <StyledNavLink component={Link} to="/Projects" isActive={isActive('/Projects')}>
               Projects
-            </StyledNavLink>
-            <StyledNavLink component={Link} to="/Music" isActive={isActive('/Music')}>
-              Music
             </StyledNavLink>
             <StyledNavLink component={Link} to="/Blog" isActive={isActive('/Blog')}>
               Blog
