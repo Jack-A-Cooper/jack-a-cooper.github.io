@@ -7,7 +7,6 @@ import {
     ContainerBox,
     HeaderTypography,
     SubHeaderTypography,
-    ParagraphTypography,
     BackgroundedParagraphTypography,
     StyledLink,
     StyledImage,

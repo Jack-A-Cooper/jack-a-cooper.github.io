@@ -4,23 +4,13 @@ import Box from '@mui/material/Box';
 import { 
     ContainerBox,
     CenterContainerBox,
-    ImageContainer,
     HeaderTypography,
     SubHeaderTypography,
-    ParagraphTypography,
     BackgroundedParagraphTypography,
-    LeftJustifiedBackgroundedParagraphTypography,
-    StyledLink,
-    StyledImage,
     ContactPageStyles,
     SectionContainerBox,
-    LargeStyledImage,
-    LeftJustifiedContainerBox,
     StyledList,
-    StyledListItem,
-    StyledListItemText,
     CenteredStyledListItem,
-    SubHeaderTypographyTwo,
 } from './Styles';
 
 const Contact = () => {

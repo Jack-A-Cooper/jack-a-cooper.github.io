@@ -2,10 +2,8 @@
 import { useContext, useState } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { List, ListItem, ListItemText, Drawer, } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
 import { ColorModeContext } from '../../App';
 import MenuIcon from '@mui/icons-material/Menu';
-import IconButton from '@mui/material/IconButton';
 import Brightness7Icon from '@mui/icons-material/Brightness7'; // Light mode icon
 import Brightness4Icon from '@mui/icons-material/Brightness4'; // Dark mode icon
 import {
@@ -24,7 +22,6 @@ import {
 } from '../Styles';
 
 function Header({ toggleDarkMode, isDarkMode }) {
-  const theme = useTheme();
   const colorMode = useContext(ColorModeContext);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const location = useLocation();

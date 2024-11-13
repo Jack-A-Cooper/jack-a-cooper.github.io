@@ -1,9 +1,7 @@
 // Styles.js
 import { styled } from '@mui/material/styles';
 import { Box, Typography, Button, Link } from '@mui/material';
-import Brightness7Icon from '@mui/icons-material/Brightness7'; // Light mode icon
-import Brightness4Icon from '@mui/icons-material/Brightness4'; // Dark mode icon
-import { Grid, Paper } from '@mui/material';
+import { Paper } from '@mui/material';
 import { List, ListItem, ListItemText } from '@mui/material';
 
 // Theme styles (for ease of reference)
@@ -158,7 +156,6 @@ export const BackgroundedParagraphTypography = styled(Typography)(({ theme }) =>
 
 // Left Justified and Backgrounded Paragraph Typography style
 export const LeftJustifiedBackgroundedParagraphTypography = styled(Typography)(({ theme }) => ({
-  textAlign: 'center',
   fontWeight: 'bold',
   display: 'inline-block',
   padding: theme.spacing(1),
@@ -237,7 +234,6 @@ export const LargeStyledImage = styled('img')(({ theme }) => ({
   width: '50%',
   padding: '4px',
   maxWidth: '100%',
-  textAlign: 'center',
   borderRadius: theme.shape.borderRadius,
   backgroundColor: theme.palette.background.paper,
   boxShadow: theme.palette.mode === 'dark' ? theme.shadows[10] : theme.shadows[8],
