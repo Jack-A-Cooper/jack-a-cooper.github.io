@@ -45,19 +45,9 @@ function Header({ toggleDarkMode, isDarkMode }) {
             <ListItemText primary="About" />
           </ListItem>
         </StyledNavLinkBar>
-         <StyledNavLinkBar to="/Demos" isActive={isActive('/Demos')} onClick={handleDrawerToggle}>
-          <ListItem button>
-            <ListItemText primary="Demos" />
-          </ListItem>
-        </StyledNavLinkBar>
         <StyledNavLinkBar to="/Projects" isActive={isActive('/Projects')} onClick={handleDrawerToggle}>
           <ListItem button>
             <ListItemText primary="Projects" />
-          </ListItem>
-        </StyledNavLinkBar>
-         <StyledNavLinkBar to="/Music" isActive={isActive('/Music')} onClick={handleDrawerToggle}>
-          <ListItem button>
-            <ListItemText primary="Music" />
           </ListItem>
         </StyledNavLinkBar>
         <StyledNavLinkBar to="/Blog" isActive={isActive('/Blog')} onClick={handleDrawerToggle}>
