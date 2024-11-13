@@ -48,8 +48,7 @@ const Projects = () => {
                             </ImageContainer>     
                         </CenterContainerBox>
                     <CenteredStyledListItem><StyledLink href="https://github.com/Jack-A-Cooper/coa-generator" rel="noreferrer" target="_blank">Coat of Arms Generator (COA Gen)</StyledLink> | Python</CenteredStyledListItem>
-                      <LeftJustifiedBackgroundedParagraphTypography>A tool to create personalized coats of arms with historical heraldic rules. Leveraging machine learning and neural networks trained to create highly detailed, unique, and correct coat of arms. Also incorporates handy scripts for project development
-                      and organization.
+                      <LeftJustifiedBackgroundedParagraphTypography>A tool to create personalized coats of arms with historical heraldic rules.
                       </LeftJustifiedBackgroundedParagraphTypography>
                       <CenterContainerBox>
                             <ImageContainer>
