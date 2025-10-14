@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.f855e6bc.css",
-    "main.js": "/static/js/main.02f38152.js",
+    "main.js": "/static/js/main.dbca0c01.js",
     "static/js/787.d4aba7ab.chunk.js": "/static/js/787.d4aba7ab.chunk.js",
     "static/media/p2.png": "/static/media/p2.d9c6292160244b816584.png",
     "static/media/p3.png": "/static/media/p3.faf480d0bec964912ccb.png",
     "static/media/PyImgScale.png": "/static/media/PyImgScale.b448e7619f464875fabe.png",
     "static/media/p1.png": "/static/media/p1.d7a657b16eca1d29d17e.png",
+    "static/media/General_Jack_Cooper_CV.pdf": "/static/media/General_Jack_Cooper_CV.09deaf7cb324d3c2db46.pdf",
     "static/media/Professional_Jack_Cooper_CV.pdf": "/static/media/Professional_Jack_Cooper_CV.9fe842c349748ee94520.pdf",
-    "static/media/General_Jack_Cooper_CV.pdf": "/static/media/General_Jack_Cooper_CV.5c8794d1157895a824d0.pdf",
     "static/media/coa gen example.png": "/static/media/coa gen example.4a96150ecb03d98abd75.png",
     "index.html": "/index.html",
     "main.f855e6bc.css.map": "/static/css/main.f855e6bc.css.map",
-    "main.02f38152.js.map": "/static/js/main.02f38152.js.map",
+    "main.dbca0c01.js.map": "/static/js/main.dbca0c01.js.map",
     "787.d4aba7ab.chunk.js.map": "/static/js/787.d4aba7ab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.02f38152.js"
+    "static/js/main.dbca0c01.js"
   ]
 }
